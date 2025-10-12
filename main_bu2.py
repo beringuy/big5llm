@@ -1,9 +1,7 @@
 
 import ollama
 import time
-from datetime import datetime
 import pandas as pd
-import os
 
 ############################### ###############################
 
@@ -40,6 +38,20 @@ neuro = ["neurotic", "emotionally stable"]
 
 factors = [openn,consc,extra,agree,neuro,]
 
+###############################
+'''
+all_conbinations = []
+
+for current_factor_1 in factors[0]:
+    for current_factor_2 in factors[1]:
+        for current_factor_3 in factors[2]:
+            for current_factor_4 in factors[3]:
+                for current_factor_5 in factors[4]:
+                    all_conbinations.append (current_factor_1+", "+current_factor_2+", "+current_factor_3+", "+current_factor_4+" e "+current_factor_5)
+
+all_conbinations
+len(all_conbinations)
+'''
 ###############################
 
 main_personalities_list = []
@@ -79,15 +91,10 @@ base_prompt = base_prompt_2
 main_df = pd.DataFrame(columns = ["persona"] + ipip50df["item"].tolist())
 main_df
 
-start = datetime.now().strftime("%Y%m%d_%H%M%S")
-log_file = "registry/" + start + "_logfile.txt"
-
 i = 0 # remover <<< <<< <<<
 for current_persona in main_personalities_list:
-    #print(current_persona)
     persona_start_time = time.time()
     tmp_persona_answer = [current_persona]
-    j = 0
     for statement in ipip50df["item"].tolist():
         #print (statement)
 
@@ -95,30 +102,18 @@ for current_persona in main_personalities_list:
 
         statement_start_time = time.time()
         resposta = basic_chat(prompt, modelo)
-        
-        tmp_log_list = []
 
-        tmp_log_list.append("=== === === === === ===")
-        tmp_log_list.append("persona " + str(i+1) + " e item " + str(j+1))
-        tmp_log_list.append("Persona: " + current_persona)
-        tmp_log_list.append("Statement: " + statement)
-        tmp_log_list.append("Resposta: " + resposta.strip())
+        print ("=== === === === === ===")
+        print ("Persona: " + current_persona)
+        print ("Statement: " + statement)
+        print ("Resposta: " + resposta.strip())
         tmp_persona_answer.append(resposta.strip())
 
-        tmp_log_list.append(">>> TEMPO: %s segundos (statement) <<<" % (time.time() - statement_start_time))
-        tmp_log_list.append("=== === === === === ===\n")
-        
-        j += 1
-        
-        with open(log_file, "a") as f:  # "a" = append (adiciona ao final)
-            for elem in tmp_log_list:
-                garbage = f.write(f"{elem}\n")
-                print (elem)
+        print (">>> TEMPO: %s segundos (statement) <<<" % (time.time() - statement_start_time))
+        print ("=== === === === === ===\n")
 
     main_df.loc[len(main_df)] = tmp_persona_answer
-    with open(log_file, "a") as f:  # "a" = append (adiciona ao final)
-        garbage = f.write( ">>> TEMPO: %s segundos (persona) <<<\n\n" % (time.time() - persona_start_time) )
-        print (">>> TEMPO: %s segundos (persona) <<<\n" % (time.time() - persona_start_time))
+    print (">>> TEMPO: %s segundos (persona) <<<\n" % (time.time() - persona_start_time))
     
     if i == 3: # remover <<< <<< <<<
         break # remover <<< <<< <<<
@@ -131,69 +126,61 @@ main_df
 score_df = pd.DataFrame(columns = ["persona"] + ipip50df["item"].tolist())
 score_df
 
-
-# Mapeamento base das respostas
-response_map = {
-    "Strongly disagree.": 1,
-    "Disagree.": 2,
-    "Neither agree nor disagree.": 3,
-    "Agree.": 4,
-    "Strongly agree.": 5
-}
-
-
 for current_row_number in range(len(main_df)):    
     tmp_persona_score = [main_df.iloc[current_row_number]["persona"]]
     
-    for i in range(1, len(main_df.columns)):
-        asc_dsc = ipip50df.iloc[i - 1]["asc_dsc"]
-        response = main_df.iloc[current_row_number][i]
-
-        if response not in response_map:
-            print(f"Warning! Resposta inválida: {response}")
-            tmp_persona_score.append(None)
-            continue
-
-        score = response_map[response]
-
-        if asc_dsc == "-":
-            score = 6 - score
-        elif asc_dsc != "+":
-            print(f"Warning! Valor de asc_dsc inválido: {asc_dsc}")
-
-        tmp_persona_score.append(score)
+    i = 0
+    for item in range(len(main_df.columns.tolist())):
+        if int(i) == 0:            
+            pass
+        else:
+            if ipip50df.iloc[int(i) - 1]["asc_dsc"] == "+":
+                if main_df.iloc[current_row_number][int(i)] == "Strongly disagree.":
+                    tmp_persona_score.append(1)
+                elif main_df.iloc[current_row_number][int(i)] == "Disagree.":
+                    tmp_persona_score.append(2)
+                elif main_df.iloc[current_row_number][int(i)] == "Neither agree nor disagree.":
+                    tmp_persona_score.append(3)
+                elif main_df.iloc[current_row_number][int(i)] == "Agree.":
+                    tmp_persona_score.append(4)
+                elif main_df.iloc[current_row_number][int(i)] == "Strongly agree.":
+                    tmp_persona_score.append(5)
+                else:
+                    print ("Warning!")
+                    
+            elif ipip50df.iloc[int(i) - 1]["asc_dsc"] == "-":
+                if main_df.iloc[current_row_number][int(i)] == "Strongly disagree.":
+                    tmp_persona_score.append(5)
+                elif main_df.iloc[current_row_number][int(i)] == "Disagree.":
+                    tmp_persona_score.append(4)
+                elif main_df.iloc[current_row_number][int(i)] == "Neither agree nor disagree.":
+                    tmp_persona_score.append(3)
+                elif main_df.iloc[current_row_number][int(i)] == "Agree.":
+                    tmp_persona_score.append(2)
+                elif main_df.iloc[current_row_number][int(i)] == "Strongly agree.":
+                    tmp_persona_score.append(1)
+                else:
+                    print ("Warning!")
+                
+            else:
+                print ("Warning!")
             
-    print("tmp_persona_score:", tmp_persona_score)
+        i = int(i) + 1
+            
+    print ('tmp_persona_score:', tmp_persona_score)    
     score_df.loc[len(score_df)] = tmp_persona_score
-
     #break
 
 score_df
 
 ###############################
 
-main_df.to_csv("registry/" + start + "_answers.csv", index=False)
-score_df.to_csv("registry/" + start + "answersScores.csv", index=False)
-
-###############################
-'''
 for i in ipip50df["item"].tolist():
     print(i)
 
 
 main_df
 score_df
-
-
-for persona in main_df["persona"]:
-    print (persona)
-    
-tmp_item = 
-
-main_df[["persona", "Feel little concern for others."]]
-score_df[["persona", "Feel little concern for others."]]
-
-
 
 ipip50df
 
@@ -206,5 +193,4 @@ main_df[main_df.columns.tolist()[0]]
 main_df.iloc[row][0]
 main_df.iloc[row]['persona']
 
-main_df.iloc[current_row_number][1]
-'''
+main_df.iloc[current_row_number][1] 
