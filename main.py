@@ -4,6 +4,10 @@ import time
 from datetime import datetime
 import pandas as pd
 import os
+import re
+
+import matplotlib.pyplot as plt
+
 
 ############################### ###############################
 
@@ -83,7 +87,7 @@ start = datetime.now().strftime("%Y%m%d_%H%M%S")
 log_file = "registry/" + start + "_logfile.txt"
 
 i = 0 # remover <<< <<< <<<
-for current_persona in main_personalities_list:
+for current_persona in main_personalities_list[i:]:
     #print(current_persona)
     persona_start_time = time.time()
     tmp_persona_answer = [current_persona]
@@ -116,12 +120,15 @@ for current_persona in main_personalities_list:
                 print (elem)
 
     main_df.loc[len(main_df)] = tmp_persona_answer
+    main_df.to_csv("registry/" + start + "_answers.csv", index=False)
+
     with open(log_file, "a") as f:  # "a" = append (adiciona ao final)
         garbage = f.write( ">>> TEMPO: %s segundos (persona) <<<\n\n" % (time.time() - persona_start_time) )
         print (">>> TEMPO: %s segundos (persona) <<<\n" % (time.time() - persona_start_time))
     
-    if i == 3: # remover <<< <<< <<<
-        break # remover <<< <<< <<<
+    if i == 1: # remover <<< <<< <<<
+        #break # remover <<< <<< <<<
+        pass # remover <<< <<< <<<
     i += 1
 
 main_df
@@ -172,8 +179,113 @@ score_df
 
 ###############################
 
-main_df.to_csv("registry/" + start + "_answers.csv", index=False)
 score_df.to_csv("registry/" + start + "answersScores.csv", index=False)
+
+###############################
+
+
+
+###############################
+
+df_new_scores_p = pd.read_csv("registry/20251012_184119answersScores.csv")
+
+df_new_scores = df_new_scores_p.drop("persona", axis=1)
+df_new_scores
+df_new_scores.dtypes
+
+# O - openness to experience
+df_fac1 = df_new_scores.iloc[:, 4::5]
+df_fac1["o_score"] = df_fac1.sum(axis=1)
+df_fac1["persona"] = df_new_scores_p["persona"]
+df_fac1
+# E - extraversion
+df_fac2 = df_new_scores.iloc[:, 0::5]
+df_fac2["e_score"] = df_fac2.sum(axis=1)
+df_fac2["persona"] = df_new_scores_p["persona"]
+df_fac2
+# A - agreeableness
+df_fac3 = df_new_scores.iloc[:, 1::5]
+df_fac3["a_score"] = df_fac3.sum(axis=1)
+df_fac3["persona"] = df_new_scores_p["persona"]
+df_fac3
+# C - conscientiousness
+df_fac4 = df_new_scores.iloc[:, 2::5]
+df_fac4["c_score"] = df_fac4.sum(axis=1)
+df_fac4["persona"] = df_new_scores_p["persona"]
+df_fac4
+# N - neuroticism
+df_fac5 = df_new_scores.iloc[:, 3::5]
+df_fac5["n_score"] = df_fac5.sum(axis=1)
+df_fac5["persona"] = df_new_scores_p["persona"]
+df_fac5
+
+df_short = df_fac1[["persona", "o_score"]]
+df_short["c_score"] = df_fac4["c_score"]
+df_short["e_score"] = df_fac2["e_score"]
+df_short["a_score"] = df_fac3["a_score"]
+df_short["n_score"] = df_fac5["n_score"]
+
+df_short["persona_list"] = df_short["persona"].apply(
+    lambda x: [i.strip() for i in re.split(r",| and ", x)]
+)
+
+df_short
+df_short["persona"].value_counts()
+df_short.columns()
+
+
+# re.split(r",| and ", df_new_scores_p["persona"][0])
+# [i.strip() for i in re.split(r",| and ", df_new_scores_p["persona"])]
+
+# "extroverted" in [i.strip() for i in re.split(r",| and ", df_new_scores_p["persona"][0])]
+# "introverted" in [i.strip() for i in re.split(r",| and ", df_new_scores_p["persona"][0])]
+# "open to experience" in [i.strip() for i in re.split(r",| and ", df_new_scores_p["persona"][0])]
+
+#########################
+
+for fator_n in range(len(factors)):
+    print(fator_n)
+    fator_alvo = factors[fator_n] # 0 - openn // 1 - consc // 2 - extra // 3 - agree // 4 - neuro
+    print(fator_alvo)
+    
+    # o_score // c_score // e_score // a_score // n_score
+    if fator_n == 0:
+        score_alvo = "o_score"
+    if fator_n == 1:
+        score_alvo = "c_score"
+    if fator_n == 2:
+        score_alvo = "e_score"
+    if fator_n == 3:
+        score_alvo = "a_score"
+    if fator_n == 4:
+        score_alvo = "n_score"
+    
+    categorias = ["highly " + fator_alvo[0], fator_alvo[0], "slightly " + fator_alvo[0], "slightly " + fator_alvo[1], fator_alvo[1], "highly " + fator_alvo[1]]
+    df_filtrado = df_short[df_short["persona_list"].apply(lambda lista: any(x in categorias for x in lista))]
+    
+    # Criar um dicionário com listas de valores de score por categoria
+    dados = {
+        cat: df_filtrado[df_filtrado["persona_list"].apply(lambda x: cat in x)][score_alvo]
+        for cat in categorias
+    }
+    
+    # Gerar o boxplot
+    plt.figure(figsize=(8, 5))
+    plt.boxplot(dados.values(), labels=dados.keys(), patch_artist=True)
+    
+    plt.title("Distribuição de score: " + fator_alvo[0] + " e " + fator_alvo[1])
+    plt.xlabel("Grau do fator")
+    plt.xticks(rotation=45)
+    plt.ylabel("Score")
+    plt.grid(True, linestyle="--", alpha=0.5)
+    
+    
+    plt.savefig("vis/boxplot_" + fator_alvo[0] + "_" + fator_alvo[1] + ".png", dpi=300, bbox_inches="tight")
+    #plt.show()
+
+
+
+
 
 ###############################
 '''
