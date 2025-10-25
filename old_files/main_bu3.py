@@ -20,13 +20,14 @@ def basic_chat(prompt, modelo):
                 "role": "user",
                 "content": prompt,
             }
-        ]
+        ],
+        think= "low" # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< para o gpt-oss:20b" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     )
 
     #print(resposta["message"]["content"])    
     return (resposta["message"]["content"])
 
-modelo = "gemma3:27b" # "gemma3:4b" ou "gemma3:12b" ou "gemma3:27b" ou "gpt-oss:20b"
+modelo = "gpt-oss:20b" # "gemma3:1b" ou "gemma3:4b" ou "gemma3:12b" ou "gemma3:27b" ou "gpt-oss:20b"
 
 ############################### ###############################
 
@@ -187,7 +188,17 @@ score_df.to_csv("registry/" + start + "answersScores.csv", index=False)
 
 ###############################
 
-df_new_scores_p = pd.read_csv("registry/20251012_184119answersScores.csv")
+levels = ["highly ", "slightly "]
+
+openn = ["open to experience", "closed to experience"]
+consc = ["conscientious", "unconscientious"]
+extra = ["extroverted", "introverted"]
+agree = ["agreeable", "antagonistic"]
+neuro = ["neurotic", "emotionally stable"]
+
+factors = [openn,consc,extra,agree,neuro,]
+
+df_new_scores_p = pd.read_csv("registry/20251019_214008answersScores.csv")
 
 df_new_scores = df_new_scores_p.drop("persona", axis=1)
 df_new_scores
@@ -271,7 +282,7 @@ for fator_n in range(len(factors)):
     
     # Gerar o boxplot
     plt.figure(figsize=(8, 5))
-    plt.boxplot(dados.values(), labels=dados.keys(), patch_artist=True)
+    plt.boxplot(dados.values(), labels=dados.keys(), patch_artist=True, showmeans=True)
     
     plt.title("Distribuição de score: " + fator_alvo[0] + " e " + fator_alvo[1])
     plt.xlabel("Grau do fator")

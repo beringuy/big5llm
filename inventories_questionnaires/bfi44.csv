@@ -1,0 +1,45 @@
+item,factor,asc_dsc
+"Talks a lot.",Extraversion,+
+"Notices other people’s weak points.",Agreeableness,-
+"Does things carefully and completely.",Conscientiousness,+
+"Is sad, depressed.",Neuroticism,+
+"Is original, comes up with new ideas.",Openness,+
+"Keeps their thoughts to themselves.",Extraversion,-
+"Is helpful and not selfish with others.",Agreeableness,+
+"Can be kind of careless.",Conscientiousness,-
+"Is relaxed, handles stress well.",Neuroticism,-
+"Is curious about lots of different things.",Openness,+
+"Has a lot of energy.",Extraversion,+
+"Starts arguments with others.",Agreeableness,-
+"Is a good, hard worker.",Conscientiousness,+
+"Can be tense; not always easy going.",Neuroticism,+
+"Clever; thinks a lot.",Openness,+
+"Makes things exciting.",Extraversion,+
+"Forgives others easily.",Agreeableness,+
+"Isn’t very organized.",Conscientiousness,-
+"Worries a lot.",Neuroticism,+
+"Has a good, active imagination.",Openness,+
+"Tends to be quiet.",Extraversion,-
+"Usually trusts people.",Agreeableness,+
+"Tends to be lazy.",Conscientiousness,-
+"Doesn’t get upset easily; steady.",Neuroticism,-
+"Is creative and inventive.",Openness,+
+"Has a good, strong personality.",Extraversion,+
+"Can be cold and distant with others.",Agreeableness,-
+"Keeps working until things are done.",Conscientiousness,+
+"Can be moody.",Neuroticism,+
+"Likes artistic and creative experiences.",Openness,+
+"Is kind of shy.",Extraversion,-
+"Kind and considerate to almost everyone.",Agreeableness,+
+"Does things quickly and carefully.",Conscientiousness,+
+"Stays calm in difficult situations.",Neuroticism,-
+"Likes work that is the same every time.",Openness,-
+"Is outgoing; likes to be with people.",Extraversion,+
+"Is sometimes rude to others.",Agreeableness,-
+"Makes plans and sticks to them.",Conscientiousness,+
+"Get nervous easily.",Neuroticism,+
+"Likes to think and play with ideas.",Openness,+
+"Doesn’t like artistic things (plays, music).",Openness,-
+"Likes to cooperate; goes along with others.",Agreeableness,+
+"Has trouble paying attention.",Conscientiousness,-
+"Knows a lot about art, music and books.",Openness,+
