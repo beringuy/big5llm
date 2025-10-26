@@ -2,3 +2,4 @@
 env_b5llm/
 env/
 __pycache__
+src/personaGenAI/__pycache__

@@ -1,0 +1,17 @@
+item,factor,asc_dsc
+"Whether or not someone suffered emotionally",Harm_Care,+
+"Whether or not some people were treated differently than others",Fairness_Reciprocity,+
+"Whether or not someone’s action showed love for his or her country",In-group_Loyalty,+
+"Whether or not someone showed a lack of respect for authority",Authority_Respect,+
+"Whether or not someone violated standards of purity and decency",Purity_Sanctity,+
+"Whether or not someone was good at math",None,+
+"Whether or not someone cared for someone weak or vulnerable",Harm_Care,+
+"Whether or not someone acted unfairly",Fairness_Reciprocity,+
+"Whether or not someone did something to betray his or her group",In-group_Loyalty,+
+"Whether or not someone conformed to the traditions of society",Authority_Respect,+
+"Whether or not someone did something disgusting",Purity_Sanctity,+
+"Whether or not someone was cruel",Harm_Care,+
+"Whether or not someone was denied his or her rights",Fairness_Reciprocity,+
+"Whether or not someone showed a lack of loyalty",In-group_Loyalty,+
+"Whether or not an action caused chaos or disorder",Authority_Respect,+
+"Whether or not someone acted in a way that God would approve of",Purity_Sanctity,+
