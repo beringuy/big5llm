@@ -1,6 +1,7 @@
 
 import pandas as pd
 import re
+import os
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
@@ -57,6 +58,7 @@ def score_counter (answers_df , inv_quest_df , info):
         print("tmp_persona_score:", tmp_persona_score)
         score_df.loc[len(score_df)] = tmp_persona_score
 
+    os.makedirs("registry/" + info + "/" , exist_ok=True)
     score_df.to_csv("registry/" + info + "/" + info + "_answersScores.csv", index=False)
     return score_df
 
