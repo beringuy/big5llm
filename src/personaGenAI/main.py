@@ -22,6 +22,31 @@ PILLAR_LIST = {
 INV_QUEST = pd.read_csv("inventories_questionnaires/ipip50.csv")
 # INV_QUEST
 
+# - ANSWERS
+# Mapeamento base das respostas
+ANSWERS = {
+    "Strongly disagree.": 1,
+    "Strongly disagree": 1,
+    "I Strongly disagree.": 1,
+    "I Strongly disagree": 1,
+    "Disagree.": 2,
+    "Disagree": 2,
+    "I Disagree.": 2,
+    "I Disagree": 2,
+    "Neither agree nor disagree.": 3,
+    "Neither agree nor disagree": 3,
+    "I Neither agree nor disagree.": 3,
+    "I Neither agree nor disagree": 3,
+    "Agree.": 4,
+    "Agree": 4,
+    "I Agree.": 4,
+    "I Agree": 4,
+    "Strongly agree.": 5,
+    "Strongly agree": 5,
+    "I Strongly agree.": 5,
+    "I Strongly agree": 5,
+}
+
 # - MODELO
 MODELO = "gemma3:12b" # "gemma3:1b" ou "gemma3:4b" ou "gemma3:12b" ou "gemma3:27b" ou "gpt-oss:20b"
 
@@ -55,11 +80,11 @@ for i in main_personalities_list:
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-from src.personaGenAI.runner import inv_quest_runner
+from src.personaGenAI.run_inv_quest_llm import run_inv_quest_llm_1
 
 # LARGE LANGUAGE MODEL:
 
-answers_df , start_time = inv_quest_runner (main_personalities_list , INV_QUEST , BASE_PROMPT , MODELO)
+answers_df , start_time = run_inv_quest_llm_1 (main_personalities_list , INV_QUEST , BASE_PROMPT , MODELO)
 answers_df
 start_time
 
@@ -67,23 +92,23 @@ start_time
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# SCORES:
-
 from src.personaGenAI.score_count import score_counter, extract_standard_responses
 
-form_answers_df = extract_standard_responses(answers_df , start_time + "_" + MODELO)
+# SCORES:
+
+form_answers_df = extract_standard_responses(answers_df , start_time + "_" + MODELO) # ver: valid_responses
 form_answers_df
 
-score_df = score_counter (form_answers_df , INV_QUEST , start_time + "_" + MODELO)
+score_df = score_counter (form_answers_df , INV_QUEST , ANSWERS , start_time + "_" + MODELO)
 score_df
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# PLOT:
-
 from src.personaGenAI.score_plot import score_ploter
+
+# PLOT:
 
 score_ploter (score_df , INV_QUEST , PILLAR_LIST, str(start_time) + "_" + MODELO)
 

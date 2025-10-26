@@ -5,33 +5,7 @@ import os
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# Mapeamento base das respostas
-response_map = {
-    "Strongly disagree.": 1,
-    "Strongly disagree": 1,
-    "I Strongly disagree.": 1,
-    "I Strongly disagree": 1,
-    "Disagree.": 2,
-    "Disagree": 2,
-    "I Disagree.": 2,
-    "I Disagree": 2,
-    "Neither agree nor disagree.": 3,
-    "Neither agree nor disagree": 3,
-    "I Neither agree nor disagree.": 3,
-    "I Neither agree nor disagree": 3,
-    "Agree.": 4,
-    "Agree": 4,
-    "I Agree.": 4,
-    "I Agree": 4,
-    "Strongly agree.": 5,
-    "Strongly agree": 5,
-    "I Strongly agree.": 5,
-    "I Strongly agree": 5,
-}
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-
-def score_counter (answers_df , inv_quest_df , info):
+def score_counter (answers_df , inv_quest_df , response_map, info):
     score_df = pd.DataFrame(columns = ["persona"] + inv_quest_df["item"].tolist())
 
     for current_row_number in range(len(answers_df)):    
