@@ -65,7 +65,7 @@ MODELO = "gemma3:4b" # "gemma3:1b" ou "gemma3:4b" ou "gemma3:12b" ou "gemma3:27b
 
 BASE_PROMPT = '''
 You are a character who is {}.
-Answer using solely and exclusively 'Strongly disagree', 'Disagree', 'Neither agree nor disagree', 'Agree' or 'Strongly agree', indicating the extent to which you agree or disagree with the following statement, according to your traits.
+Answer using solely 'Strongly disagree', 'Disagree', 'Neither agree nor disagree', 'Agree' or 'Strongly agree', indicating the extent to which you agree or disagree with the following statement based on your traits.
 Answer concisely, objectively, and in the first person.
 Statement: '{}'.
 '''
