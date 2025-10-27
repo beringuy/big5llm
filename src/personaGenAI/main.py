@@ -48,7 +48,7 @@ ANSWERS = {
 }
 
 # - MODELO
-MODELO = "gemma3:12b" # "gemma3:1b" ou "gemma3:4b" ou "gemma3:12b" ou "gemma3:27b" ou "gpt-oss:20b"
+MODELO = "gemma3:27b" # "gemma3:1b" ou "gemma3:4b" ou "gemma3:12b" ou "gemma3:27b" ou "gpt-oss:20b"
 
 # - BASE_PROMPT
 BASE_PROMPT = '''
@@ -80,11 +80,20 @@ for i in main_personalities_list:
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-from src.personaGenAI.run_inv_quest_llm import run_inv_quest_llm_1
+from src.personaGenAI.run_inv_quest_llm import run_inv_quest_llm_pt1 , run_inv_quest_llm_pt2
 
 # LARGE LANGUAGE MODEL:
 
-answers_df , start_time = run_inv_quest_llm_1 (main_personalities_list , INV_QUEST , BASE_PROMPT , MODELO)
+# ETAPA 1:
+"""
+answers_df , start_time = run_inv_quest_llm_pt1 (main_personalities_list , INV_QUEST , MODELO)
+answers_df
+start_time
+"""
+
+# ETAPA 2:
+
+answers_df , start_time = run_inv_quest_llm_pt2 (main_personalities_list , INV_QUEST , MODELO)
 answers_df
 start_time
 
