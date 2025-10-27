@@ -100,7 +100,6 @@ Statement: '{}'.
                 for elem in tmp_log_list:
                     garbage = f.write(f"{elem}\n")
                     print (elem)
-        chat_history = []
         
         tmp_df.loc[len(tmp_df)] = tmp_persona_answer
         tmp_df.to_csv("registry/" + start + "_" + modelo + "/" + start + "_" + modelo + "_answers.csv", index=False)
