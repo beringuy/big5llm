@@ -50,14 +50,6 @@ ANSWERS = {
 # - MODELO
 MODELO = "gemma3:27b" # "gemma3:1b" ou "gemma3:4b" ou "gemma3:12b" ou "gemma3:27b" ou "gpt-oss:20b"
 
-# - BASE_PROMPT
-BASE_PROMPT = '''
-You are a character who is {}.
-Answer using solely 'Strongly disagree', 'Disagree', 'Neither agree nor disagree', 'Agree' or 'Strongly agree', indicating the extent to which you agree or disagree with the following statement based on your traits.
-Answer concisely, objectively, and in the first person. Do not justify or explain your answers.
-Statement: '{}'.
-'''
-
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #

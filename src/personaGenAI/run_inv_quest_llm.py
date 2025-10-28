@@ -53,7 +53,7 @@ def chat_with_memory(prompt, modelo):
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-def run_inv_quest_llm_pt1 (persona_list , inv_quest_df ,  modelo = "gemma3:4b"):
+def run_inv_quest_llm_pt1 (persona_list , inv_quest_df ,  modelo = "gemma3:12b"):
     tmp_df = pd.DataFrame(columns = ["persona"] + inv_quest_df["item"].tolist())
     tmp_df
     
@@ -117,7 +117,9 @@ Statement: '{}'.
 
 # # # # # # # # # #
 
-def run_inv_quest_llm_pt2 (persona_list , inv_quest_df ,  modelo = "gemma3:4b"):
+# # # # # # # # # #
+
+def run_inv_quest_llm_pt2 (persona_list , inv_quest_df ,  modelo = "gemma3:12b"):
     global chat_history
     
     tmp_df = pd.DataFrame(columns = ["persona"] + inv_quest_df["item"].tolist())
@@ -185,6 +187,12 @@ Answer concisely, objectively, and in the first person. Do not justify or explai
         i += 1 # remover <<< <<< <<<
         
     return tmp_df , start
+
+# # # # # # # # # #
+
+# # # # # # # # # #
+
+def run_inv_quest_llm_pt3 (persona_list , inv_quest_df ,  modelo = "gemma3:12b"):
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
