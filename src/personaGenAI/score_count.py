@@ -23,7 +23,7 @@ def score_counter (answers_df , inv_quest_df , response_map, info):
             score = response_map[response]
 
             if asc_dsc == "-":
-                score = 6 - score # <<<<<<<<<< tem que ser de acordo com a quantiodade de opções e não 6 <<<<<<<<<<
+                score = response_map['REF_VALUE'] - score
             elif asc_dsc != "+":
                 print(f"Warning! Valor de asc_dsc inválido: {asc_dsc}")
 

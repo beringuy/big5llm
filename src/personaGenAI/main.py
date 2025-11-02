@@ -7,7 +7,7 @@ import pandas as pd
 
 # SETUP:
 # - LEVELS
-LEVELS = ["highly", "slightly"]
+LEVELS = ["highly ", "slightly "]
 
 # - PILLAR_LIST
 PILLAR_LIST = {
@@ -45,6 +45,7 @@ ANSWERS = {
     "Strongly agree": 5,
     "I Strongly agree.": 5,
     "I Strongly agree": 5,
+    'REF_VALUE':6,
 }
 
 # - MODELO
@@ -67,6 +68,7 @@ print ("-- leveled_personalities_list length" , len (leveled_personalities_list)
 main_personalities_list = leveled_personalities_list
 for i in main_personalities_list:
     print (i)
+print (len(main_personalities_list))
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 

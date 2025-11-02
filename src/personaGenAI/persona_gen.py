@@ -30,11 +30,11 @@ def level_personas (persona_list, levels):
         #print ("Persona:", persona)
         split_factors = re.split(r',\W|\Wand\W', persona)
         for i in range(len(split_factors)):
-            #print ("Factor:", i)
             for level in levels:
                 #print ("Level:", level)
+                #print ("Factor:", i)
                 aux_split_factors = split_factors.copy()
-                aux_split_factors[i] = level + " " + split_factors[i]
+                aux_split_factors[i] = level + split_factors[i]
                 leveled_personas.append(", ".join(aux_split_factors[:-1]) + " and " + aux_split_factors[-1])
                 
     return leveled_personas
