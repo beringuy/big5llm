@@ -1,5 +1,6 @@
 .vscode/
 env_b5llm/
+registry/
 env/
 __pycache__
 src/personaGenAI/__pycache__

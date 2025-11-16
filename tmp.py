@@ -34,7 +34,28 @@ multi_value_counts(tmp_df_2.drop(columns="persona"))
 
 import ollama
 
+def basic_chat(prompt, modelo):
+    
+    resposta = ollama.chat(
+        model = modelo,
+        messages = [
+            {
+                "role": "user",
+                "content": prompt,
+            }
+        ],
+        #think = "low" # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< para o gpt-oss:20b" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    )
 
+    #print(resposta["message"]["content"])    
+    return (resposta["message"]["content"])
+
+resposta = basic_chat(prompt, modelo)
+resposta
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+import ollama
 
 # histórico global
 chat_history = []
@@ -61,10 +82,35 @@ def chat_with_memory(prompt, modelo):
 
     return content
 
-##########################################################
-
 prompt = ""
 while prompt != "sair":
     prompt = input("Diga algo ('sair' para encerrar):")
     resposta = chat_with_memory(prompt, "gemma3:4b")
     print(resposta)
+
+##########################################################
+
+import pandas as pd
+
+score_df = pd.read_csv("registry/20251115_202419_gemma3:4b/20251115_202419_gemma3:4b_answersScores.csv")
+
+inv_quest = pd.read_csv("inventories_questionnaires/mfq30_pt2.csv")
+
+pillar_list = {
+    "Openness" : ["open to experience", "closed to experience"],
+    "Conscientiousness" : ["conscientious", "unconscientious"],
+    "Extraversion" : ["extroverted", "introverted"],
+    #"Agreeableness" : ["agreeable", "antagonistic"],
+    #"Neuroticism" : ["neurotic", "emotionally stable"],
+    }
+
+
+score_df[ inv_quest[inv_quest["factor"] == pilar]["item"].to_list() ]
+
+for pilar in pillar_list:
+    print(pilar)
+    tmp_df = score_df[ inv_quest[inv_quest["factor"] == pilar]["item"].to_list() ]
+    new_df[pilar + "_score"] = tmp_df.sum(axis=1)
+    
+    
+inv_quest[inv_quest["factor"] == "Harm_Care"]["item"].to_list()
