@@ -114,3 +114,55 @@ for pilar in pillar_list:
     
     
 inv_quest[inv_quest["factor"] == "Harm_Care"]["item"].to_list()
+
+##########################################################
+
+import ollama
+import pandas as pd
+import time
+import os
+import re
+from datetime import datetime
+
+# # # # # # # # # # # # # # #
+
+MODELS_WITH_THINK = {
+    "gpt-oss:20b",
+}
+
+def basic_chat(prompt, model, temperature=None):
+
+    kwargs = {
+        "model": model,        
+        "messages": [
+            {
+                "role": "user",
+                "content": prompt,
+            }
+        ],
+    }
+
+    if temperature is not None:
+        kwargs["options"] = {"temperature": temperature}
+    
+    if model in MODELS_WITH_THINK:
+        kwargs["think"] = "low"
+
+    resposta = ollama.chat(**kwargs)
+    return resposta["message"]["content"]
+
+
+prompt = """
+You are a character who is extroverted and agreeable. 
+ Answer using solely 'strongly disagree', 'disagree', 'neither agree nor disagree', 'agree', 'strongly agree', indicating the extent to which you agree or disagree with the following statement based on your traits. 
+ Answer concisely, objectively, and in the first person.
+ Do not justify or explain your answers. 
+ Statement: 'Acts as they believe they should.'
+ Response: strongly agree
+ Statement: 'Usually trusts people.'. 
+ Response:
+"""
+
+
+resposta = basic_chat(prompt, "gemma3:12b", 0)
+print(resposta)

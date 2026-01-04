@@ -1,4 +1,4 @@
-item,factor,asc_dsc
+item,dimension,asc_dsc
 "Talks a lot.",Extraversion,+
 "Notices other people’s weak points.",Agreeableness,-
 "Does things carefully and completely.",Conscientiousness,+

@@ -1,5 +1,6 @@
 .vscode/
 env_b5llm/
+b5l_env/
 registry/
 env/
 __pycache__

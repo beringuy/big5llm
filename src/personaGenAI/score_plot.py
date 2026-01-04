@@ -19,17 +19,17 @@ def count_unique_first_elements(df, colname, i):
 # # # # # # # # # #
 
 def score_ploter (score_df , inv_quest , pillar_list, info):
-    inv_factor_list = inv_quest["factor"].value_counts().index.tolist()
+    inv_quest_dimension_list = inv_quest["dimension"].value_counts().index.tolist()
     
     new_df = score_df[["persona"]]    
-    new_df["factor_list"] = new_df["persona"].apply(
+    new_df["dimension_list"] = new_df["persona"].apply(
         lambda x: [i.strip() for i in re.split(r",| and ", x)]
     )
     
-    for inv_factor in inv_factor_list:
-        print(inv_factor)
-        tmp_df = score_df[ inv_quest[inv_quest["factor"] == inv_factor]["item"].to_list() ]
-        new_df[inv_factor + "_score"] = tmp_df.sum(axis=1)
+    for inv_quest_dimension in inv_quest_dimension_list:
+        print(inv_quest_dimension)
+        tmp_df = score_df[ inv_quest[inv_quest["dimension"] == inv_quest_dimension]["item"].to_list() ]
+        new_df[inv_quest_dimension + "_score"] = tmp_df.sum(axis=1)
     
     print ("--")
     print (new_df)
@@ -39,30 +39,33 @@ def score_ploter (score_df , inv_quest , pillar_list, info):
     
     ## ## ##
     
-    for current_inv_factor in inv_factor_list:
+    for current_inv_quest_dimension in inv_quest_dimension_list:
         plot_df = []
         for pillar_i in range(len(pillar_list)):
-            current_data = new_df[["factor_list", current_inv_factor+"_score"]].copy()
+            current_data = new_df[["dimension_list", current_inv_quest_dimension+"_score"]].copy()
             current_data["pillar"] = pillar_i
-            current_data["fator"] = current_inv_factor
-            current_data["classe"] = current_data["factor_list"].apply(lambda x: x[pillar_i])
+            current_data["fator"] = current_inv_quest_dimension
+            current_data["classe"] = current_data["dimension_list"].apply(lambda x: x[pillar_i])
 
-            plot_df.append(current_data[["classe", current_inv_factor+"_score", "fator"]]
-                           .rename(columns={current_inv_factor+"_score": "score"}))
+            plot_df.append(current_data[["classe", current_inv_quest_dimension+"_score", "fator"]]
+                           .rename(columns={current_inv_quest_dimension+"_score": "score"}))
 
         # junta tudo
         plot_df = pd.concat(plot_df)
 
         plt.figure(figsize=(12,6))
+        
         sns.boxplot(data=plot_df, x="classe", y="score", hue="fator", showmeans=True)
-        plt.title("Distribuição de score")
+        #sns.violinplot(data=plot_df, x="classe", y="score", hue="fator", split=False, inner="quartile", linewidth=1)
+
+        plt.title("Score Distribution - "+ current_inv_quest_dimension) # checar: dimension referente ao quest ou ao response?
         plt.xlabel("Classes")
         plt.ylabel("Score")
-        plt.legend(title="Fator")
+        plt.legend(title="Dimension") # checar: dimension referente ao quest ou ao response?
         plt.xticks(rotation=45)
         plt.grid(True, linestyle="--", alpha=0.5)
         
-        plt.savefig("registry/" + info + "/vis/boxplot_" + str(current_inv_factor) + ".png",
+        plt.savefig("registry/" + info + "/vis/boxplot_" + str(current_inv_quest_dimension) + ".png",
                     dpi=300, bbox_inches="tight")
         plt.close()
         

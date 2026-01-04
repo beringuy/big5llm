@@ -1,4 +1,4 @@
-item,factor,asc_dsc
+item,dimension,asc_dsc
 "Whether or not someone suffered emotionally",Harm_Care,+
 "Whether or not some people were treated differently than others",Fairness_Reciprocity,+
 "Whether or not someone’s action showed love for his or her country",In-group_Loyalty,+
