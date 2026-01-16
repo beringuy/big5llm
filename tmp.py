@@ -166,3 +166,15 @@ You are a character who is extroverted and agreeable.
 
 resposta = basic_chat(prompt, "gemma3:12b", 0)
 print(resposta)
+
+
+##########################################################
+
+
+from src.personaGenAI.run_inv_quest_llm import statefull_chat
+
+
+
+statefull_chat("qual foi a primeira mensagem que eu enviei?", "ollama", "gemma3:4b", temperature=None)
+
+statefull_chat("Qual foi minha primeira mensagem?", "groq", "llama-3.1-8b-instant", temperature=None)

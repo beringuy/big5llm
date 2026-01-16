@@ -19,8 +19,11 @@ def score_counter (answers_df , inv_quest_df , response_map, experiment_info):
             response = answers_df.iloc[current_row_number, i]
             
             if response not in response_map:
-                print(f"Warning! Invalid response: {response}")
-                print("persona", current_row_number+1, "/ item",i)
+                print("Warning! Invalid response:")
+                print(">>>")
+                print(response)
+                print("<<<\n")
+                print("persona", current_row_number+1, "/ item",i)                
                 invalid_response_counter += 1
                 tmp_persona_score.append(None)
                 continue
@@ -37,7 +40,9 @@ def score_counter (answers_df , inv_quest_df , response_map, experiment_info):
         print("tmp_persona_score:", tmp_persona_score)
         score_df.loc[len(score_df)] = tmp_persona_score
 
-    print("Invalid responses (total):", invalid_response_counter)
+    print("\n")
+    print(">>> Invalid responses (total):", invalid_response_counter)
+    print("\n")
 
     os.makedirs("registry/" + experiment_info + "/" , exist_ok=True)
     score_df.to_csv("registry/" + experiment_info + "/" + experiment_info + "_answersScores.csv", index=False)

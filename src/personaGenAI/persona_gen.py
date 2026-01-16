@@ -24,7 +24,7 @@ def combine_dimensions(dimensions, tmp_persona=None, depth=0, persona_list=None)
 # # # # # # # # # #
 
 def level_personas (persona_list, levels=None):
-    if levels == [] or levels == None:
+    if levels == [] or levels == [""] or levels == None:
         return persona_list
 
     leveled_personas = []

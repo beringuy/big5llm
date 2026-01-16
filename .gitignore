@@ -6,3 +6,5 @@ env/
 __pycache__
 src/personaGenAI/__pycache__
 saida.log
+keys.env
+.env
