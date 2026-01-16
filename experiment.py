@@ -6,7 +6,7 @@
 import pandas as pd
 
 from src.personaGenAI.persona_gen import combine_dimensions, level_personas
-from src.personaGenAI.run_inv_quest_llm import run_inv_quest_llm_stateless, run_inv_quest_llm_statefull
+from src.personaGenAI.run_inv_quest_llm import run_inv_quest_llm
 from src.personaGenAI.score_count import score_counter, extract_standard_responses
 from src.personaGenAI.score_plot import score_ploter
 
@@ -267,23 +267,8 @@ class AIPsychExperiment:
         self.experiment_score_by_dimensions = None
         
     def run_experiment(self):
-        if self.experiment_type == "stateless":
-            self.experiment_info, self.experiment_responses, self.experiment_start_time = run_inv_quest_llm_stateless (self.leveled_persona_list,
-                                                                                                                       self.psych_domain_base_prompt,
-                                                                                                                       self.leveled_persona_list_prompt,
-                                                                                                                       self.inv_quest,
-                                                                                                                       self.inv_quest_base_prompt,
-                                                                                                                       
-                                                                                                                       self.psych_domain_cat,
-                                                                                                                       self.inv_quest_cat,
-                                                                                                                       self.experiment_type,
-                                                                                                                       self.inv_quest_answers_str,
-                                                                                                                       
-                                                                                                                       self.client,
-                                                                                                                       self.model,
-                                                                                                                       self.temperature)
-        elif self.experiment_type == "statefull":
-            self.experiment_info, self.experiment_responses, self.experiment_start_time = run_inv_quest_llm_statefull (self.leveled_persona_list,
+        if self.experiment_type == "stateless" or self.experiment_type == "statefull":
+            self.experiment_info, self.experiment_responses, self.experiment_start_time = run_inv_quest_llm (self.leveled_persona_list,
                                                                                                                        self.psych_domain_base_prompt,
                                                                                                                        self.leveled_persona_list_prompt,
                                                                                                                        self.inv_quest,
