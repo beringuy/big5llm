@@ -1,5 +1,7 @@
 # run
 
+git clone https://github.com/beringuy/big5llm
+
 python3 -m venv b5l_env
 
 . b5l_env/bin/activate

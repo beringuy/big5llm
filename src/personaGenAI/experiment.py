@@ -204,7 +204,6 @@ class AIPsychExperiment:
         self.experiment_responses = None
         self.experiment_start_time = None
         
-        self.experiment_std_responses = None
         self.experiment_score = None
         
         self.experiment_score_by_dimensions = None
@@ -226,18 +225,7 @@ class AIPsychExperiment:
                                                                                                                        self.model,
                                                                                                                        self.temperature)
         else:
-            print(">>> Invalid experiment_type. Try 'stateless' or 'statefull'!")
-            
-        '''
-        self.experiment_std_responses = extract_standard_responses(self.experiment_responses,
-                                                                   self.inv_quest_answers_str,
-                                                                   self.experiment_info) # TALVEZ REMOVER ESSA ETAPA SE AS RESPOSTAS ESTÃO OKs
-        
-        self.experiment_score = score_counter (self.experiment_std_responses,
-                                               self.inv_quest,
-                                               self.inv_quest_answers_score,
-                                               self.experiment_info)
-        #'''
+            print(">>> Warning! Invalid experiment_type. Try 'stateless' or 'statefull'!!!")
         
         self.experiment_score = score_counter (self.experiment_responses,
                                                self.inv_quest,
@@ -253,6 +241,3 @@ class AIPsychExperiment:
     def run_all(self):
         self.run_experiment()
         self.plot_graphs()
-
-
-##########################################################################################

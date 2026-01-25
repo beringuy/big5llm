@@ -52,7 +52,7 @@ EXP_TYPE = [
     "statefull", # 1
     ][0]
 
-# EXPERIMENT
+# EXPERIMENT RUN
 
 exp1 = AIPsychExperiment(CLIENT, MODEL, TEMPERATURE, PSYCH_DOMAIN_CAT, LEVELS, INV_QUEST_CAT, EXP_TYPE)
 
@@ -79,7 +79,6 @@ print(exp1.experiment_info)
 print(exp1.experiment_responses)
 print(exp1.experiment_start_time)
 
-print(exp1.experiment_std_responses)
 print(exp1.experiment_score)
 
 print(exp1.experiment_score_by_dimensions)
@@ -90,9 +89,38 @@ exp1.experiment_info
 exp1.experiment_responses
 exp1.experiment_start_time
 
-exp1.experiment_std_responses
 exp1.experiment_score
 
 exp1.plot_graphs()
 
 exp1.experiment_score_by_dimensions
+
+# # # # # # # # # #
+
+# Models:
+models = [
+    ["ollama","gemma3:27b"],
+    ["ollama","gpt-oss:20b"],
+    ["ollama","qwen3:14b"],
+    ["ollama","deepseek-r1:14b"],
+    ["groq","openai/gpt-oss-120b"],
+    ["openai",""],
+    ["gemini",""],
+    ]
+
+
+# for each model:
+exps = {
+    "A1 - unspecified x personality - stateless" : [],
+    "A2 - unspecified x personality - statefull" : [],
+    "B1 - leveled Big5 x personality - stateless" : [],
+    "B2 - leveled Big5 x personality - statefull" : [],
+    "C1 - unspecified x morality - stateless" : [],
+    "C2 - unspecified x morality - statefull" : [],
+    "D1 - MFT x morality pt1 - stateless" : [],
+    "D2 - MFT x morality pt2 - stateless" : [],
+    #"D3 - MFT x morality pt1 - statefull" : [],
+    #"D4 - MFT x morality pt2 - statefull" : [],
+    "E1 - leveled Big5 x morality - stateless" : [],
+    #"E2 - leveled Big5 x morality - statefull" : [],
+    }
