@@ -13,15 +13,133 @@ import seaborn as sns
 palette_classes = {
     "open to experience": "#27E0F5",
     "closed to experience": "#27E0F5",
+    "highly open to experience": "#27E0F5",
+    "highly closed to experience": "#27E0F5",
+    "slightly open to experience": "#27E0F5",
+    "slightly closed to experience": "#27E0F5",
+    
     "conscientious": "#27F598",
     "unconscientious": "#27F598",
+    "highly conscientious": "#27F598",
+    "highly unconscientious": "#27F598",
+    "slightly conscientious": "#27F598",
+    "slightly unconscientious": "#27F598",
+    
     "extroverted": "#F5BE27",
     "introverted": "#F5BE27",
+    "highly extroverted": "#F5BE27",
+    "highly introverted": "#F5BE27",
+    "slightly extroverted": "#F5BE27",
+    "slightly introverted": "#F5BE27",
+    
     "agreeable": "#F5277D",
     "antagonistic": "#F5277D",
+    "highly agreeable": "#F5277D",
+    "highly antagonistic": "#F5277D",
+    "slightly agreeable": "#F5277D",
+    "slightly antagonistic": "#F5277D",
+    
     "neurotic": "#F87C63",
     "emotionally stable": "#F87C63",
+    "highly neurotic": "#F87C63",
+    "highly emotionally stable": "#F87C63",
+    "slightly neurotic": "#F87C63",
+    "slightly emotionally stable": "#F87C63",
+    
+    
+    
+    "cares strongly about the well-being of others": "#F5277D",
+    "cares about the well-being of others": "#F5277D",
+    "cares slightly about the well-being of others": "#F5277D",
+    "is not concerned with the well-being of others": "#F5277D",
+    
+    "cares strongly about reciprocity or fairness": "#27F598",
+    "cares about reciprocity or fairness": "#27F598",
+    "cares slightly about reciprocity or fairness": "#27F598",
+    "is not concerned with reciprocity or fairness": "#27F598",
+    
+    "cares strongly about loyalty to your group": "#F87C63",
+    "cares about loyalty to your group": "#F87C63",
+    "cares slightly about loyalty to your group": "#F87C63",
+    "is not concerned with loyalty to your group": "#F87C63",
+    
+    "cares strongly about respecting hierarchies or authority figures": "#F5BE27",
+    "cares about respecting hierarchies or authority figures": "#F5BE27",
+    "cares slightly about respecting hierarchies or authority figures": "#F5BE27",
+    "is not concerned with respecting hierarchies or authority figures": "#F5BE27",
+    
+    "cares strongly about moral purity or spiritual elevation": "#27E0F5",
+    "cares about moral purity or spiritual elevation": "#27E0F5",
+    "cares slightly about moral purity or spiritual elevation": "#27E0F5",
+    "is not concerned with moral purity or spiritual elevation": "#27E0F5",
 }
+
+ordered_classes = [
+        "",
+        " ",
+    
+        "highly open to experience",
+        "open to experience",
+        "slightly open to experience",
+        "slightly closed to experience",
+        "closed to experience",
+        "highly closed to experience",
+        
+        "highly conscientious",
+        "conscientious",
+        "slightly conscientious",
+        "slightly unconscientious",
+        "unconscientious",
+        "highly unconscientious",
+        
+        "highly extroverted",
+        "extroverted",
+        "slightly extroverted",
+        "slightly introverted",
+        "introverted",
+        "highly introverted",
+                
+        "highly agreeable",
+        "agreeable",
+        "slightly agreeable",
+        "slightly antagonistic",
+        "antagonistic",
+        "highly antagonistic",
+        
+        "highly neurotic",
+        "neurotic",
+        "slightly neurotic",
+        "slightly emotionally stable",
+        "emotionally stable",
+        "highly emotionally stable",
+        
+        
+        "cares strongly about the well-being of others",
+        "cares about the well-being of others",
+        "cares slightly about the well-being of others",
+        "is not concerned with the well-being of others",
+    
+        "cares strongly about reciprocity or fairness",
+        "cares about reciprocity or fairness",
+        "cares slightly about reciprocity or fairness",
+        "is not concerned with reciprocity or fairness",
+    
+        "cares strongly about loyalty to your group",
+        "cares about loyalty to your group",
+        "cares slightly about loyalty to your group",
+        "is not concerned with loyalty to your group",
+    
+        "cares strongly about respecting hierarchies or authority figures",
+        "cares about respecting hierarchies or authority figures",
+        "cares slightly about respecting hierarchies or authority figures",
+        "is not concerned with respecting hierarchies or authority figures",
+    
+        "cares strongly about moral purity or spiritual elevation",
+        "cares about moral purity or spiritual elevation",
+        "cares slightly about moral purity or spiritual elevation",
+        "is not concerned with moral purity or spiritual elevation",
+        ]
+
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
@@ -72,6 +190,10 @@ def score_ploter (score_df , inv_quest , psych_domain_dimensions, info):
         
         print("plot_df:")
         print(plot_df)
+        
+        # ordena as classes
+        # manter apenas as classes que existem no dataframe
+        ordem_classes_presentes = [c for c in ordered_classes if c in plot_df["classe"].unique()]
 
         plt.figure(figsize=(12,6))
         
@@ -80,14 +202,22 @@ def score_ploter (score_df , inv_quest , psych_domain_dimensions, info):
                     y="score",
                     palette=palette_classes,
                     #hue="inv_quest_dimension",
-                    showmeans=True)
+                    order=ordem_classes_presentes,
+                    showmeans=True,
+                    meanprops={
+                        "marker": "o",
+                        "markerfacecolor": "black",
+                        "markeredgecolor": "black",
+                        "markersize": 5
+                        }
+                    )
         #sns.violinplot(data=plot_df, x="classe", y="score", hue="inv_quest_dimension", split=False, inner="quartile", linewidth=1)
 
-        plt.title("Score Distribution - "+ current_inv_quest_dimension)
+        plt.title("Experiment: " + info + "\n\nScore Distribution - " + current_inv_quest_dimension)
         plt.xlabel("Class(es)")
         plt.ylabel("Score")
-        plt.legend(title="Dimension") # checar: dimension referente ao quest ou ao response?
-        plt.xticks(rotation=45)
+        #plt.legend(title="Dimension") # checar: dimension referente ao quest ou ao response?
+        plt.xticks(rotation=90) # 45 > 90
         plt.grid(True, linestyle="--", alpha=0.5)
         
         plt.savefig("registry/" + info + "/vis/boxplot_" + str(current_inv_quest_dimension) + ".png",

@@ -14,8 +14,8 @@ from datetime import datetime
 
 MODELS_WITH_THINK = {
     "gpt-oss:20b",
-    "qwen3:14b",
-    "deepseek-r1:14b",
+    #"qwen3:14b",
+    #"deepseek-r1:14b",
 }
 
 # CRIAR ".env" com "GROQ_API_KEY=[groq_api_key]"

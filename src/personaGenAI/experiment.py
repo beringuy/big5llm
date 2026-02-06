@@ -3,7 +3,7 @@ import pandas as pd
 
 from src.personaGenAI.persona_gen import combine_dimensions, level_personas
 from src.personaGenAI.run_inv_quest_llm import run_inv_quest_llm
-from src.personaGenAI.score_count import score_counter, extract_standard_responses
+from src.personaGenAI.score_count import score_counter
 from src.personaGenAI.score_plot import score_ploter
 
 ###########################
@@ -12,14 +12,14 @@ from src.personaGenAI.score_plot import score_ploter
 
 PSYCH_DOMAINS = {
     "personality_bigfive" : {
-        #"Openness" : [
-        #    "open to experience",
-        #    "closed to experience",
-        #    ],
-        #"Conscientiousness" : [
-        #    "conscientious",
-        #    "unconscientious",
-        #    ],
+        "Openness" : [
+            "open to experience",
+            "closed to experience",
+            ],
+        "Conscientiousness" : [
+            "conscientious",
+            "unconscientious",
+            ],
         "Extraversion" : [
             "extroverted",
             "introverted",
@@ -28,26 +28,43 @@ PSYCH_DOMAINS = {
             "agreeable",
             "antagonistic",
             ],
-        #"Neuroticism" : [
-        #    "neurotic",
-        #    "emotionally stable",
-        #    ],
+        "Neuroticism" : [
+            "neurotic",
+            "emotionally stable",
+            ],
         "BASE_PROMPT" : "You are a character who is {}.",
     },
+    
+    
+    "personality_bigfive_mod" : {
+        "Extraversion" : [
+            "extroverted",
+            "introverted",
+            ],
+        "Agreeableness" : [
+            "agreeable",
+            "antagonistic",
+            ],
+        "BASE_PROMPT" : "You are a character who is {}.",
+    },
+    
+    
     
     "unspecified" : {
         "Unspecified" : [""],
         "BASE_PROMPT" : "",
     },
     
-    "morality_mft_tmp1" : {
+    
+    
+    "morality_mft_v1" : {
         "Harm_Care" : [
             "cares about the well-being of others",
             "is not concerned with the well-being of others",
             ],
         "Fairness_Reciprocity" : [
-            "cares about reciprocity",
-            "is not concerned with reciprocity",
+            "cares about reciprocity or fairness",
+            "is not concerned with reciprocity or fairness",
             ],
         "In-group_Loyalty" : [
             "cares about loyalty to your group",
@@ -64,16 +81,17 @@ PSYCH_DOMAINS = {
         "BASE_PROMPT" : "You are a character who {}.",
     },
     
-    "morality_mft_tmp2" : {
+    
+    "morality_mft_v2" : {
         "Harm_Care" : [
             "cares strongly about the well-being of others",
             "cares slightly about the well-being of others",
             "is not concerned with the well-being of others",
             ],
         "Fairness_Reciprocity" : [
-            "cares strongly about reciprocity",
-            "cares slightly about reciprocity",
-            "is not concerned with reciprocity",
+            "cares strongly about reciprocity or fairness",
+            "cares slightly about reciprocity or fairness",
+            "is not concerned with reciprocity or fairness",
             ],
         "In-group_Loyalty" : [
             "cares strongly about loyalty to your group",
@@ -103,7 +121,7 @@ INV_QUEST = {
  Answer concisely, objectively, and in the first person. 
  Do not justify or explain your answers. 
  
- Statement: 'Acts as they believe they should.' 
+ Statement: 'Has opinions about various topics.' 
  Response: strongly agree 
  
  Statement: '{}'. 
@@ -129,7 +147,7 @@ INV_QUEST = {
  Answer concisely, objectively, and in the first person. 
  Do not justify or explain your answers. 
  
- Statement: 'Acts as they believe they should.' 
+ Statement: 'Has opinions about various topics.' 
  Response: strongly agree 
  
  Statement: '{}'. 
@@ -154,6 +172,9 @@ INV_QUEST = {
  Answer concisely, objectively, and in the first person, based on your traits. Do not justify or explain your answers. 
  When you decide whether something is right or wrong, to what extent are the following considerations relevant to your thinking? 
  Answer using solely {}. 
+
+ Consideration: 'Whether or not someone was good at math'. 
+ Response: not at all relevant 
  
  Consideration: '{}'. 
  Response: ''',
@@ -168,7 +189,39 @@ INV_QUEST = {
             'REF_VALUE':5,
         },
     },
+    
+    
+    
+    "mfq30_pt2" : {
+        "path" : "inventories_questionnaires/mfq30_pt2.csv",
+        
+        "base_prompt" : ''' {} 
+ Answer concisely, objectively, and in the first person, based on your traits. Do not justify or explain your answers. 
+ Read the following sentences and indicate your agreement or disagreement. 
+ Answer using solely {}. 
+
+ Sentence: 'It is better to do good than to do bad.'. 
+ Response: strongly agree 
+ 
+ Sentence: '{}'. 
+ Response: ''',
+            
+        "answers" : {
+            "strongly disagree": 0,
+            "moderately disagree": 1,
+            "slightly disagree": 2,
+            "slightly agree": 3,
+            "moderately agree": 4,
+            "strongly agree": 5,
+            'REF_VALUE':5,
+        },
+    },
+    
+    
+
 }
+
+# Statement: 'Acts as they believe they should.'  # old neutral
 
 ##########################################################################################
 
