@@ -1,6 +1,11 @@
 
 import ollama
 from groq import Groq
+# pip install openai
+from openai import OpenAI
+# pip install google-genai
+from google import genai
+
 # pip install python-dotenv
 from dotenv import load_dotenv
 
@@ -20,7 +25,6 @@ MODELS_WITH_THINK = {
 
 # CRIAR ".env" com "GROQ_API_KEY=[groq_api_key]"
 load_dotenv()
-
 #groq_api_key = os.getenv("GROQ_API_KEY")
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -63,6 +67,7 @@ def llm_chat(prompt, client, model, experiment_type, temperature=None):
         
         # adiciona a resposta ao histórico
         chat_history.append({"role": "assistant", "content": resposta["message"]["content"]})
+        
         print ("\n-- Chat History:", chat_history)
         
         return resposta["message"]["content"]
@@ -71,15 +76,79 @@ def llm_chat(prompt, client, model, experiment_type, temperature=None):
         if temperature is not None:
             kwargs["temperature"] = temperature
 
-        response = Groq().chat.completions.create(**kwargs)
+        groq_client = Groq()
+        response = groq_client.chat.completions.create(**kwargs,
+                                                       tools=[],
+                                                       tool_choice="none")
         #response = Groq(api_key=groq_api_key).chat.completions.create(**kwargs)
         
+        assistant_content = response.choices[0].message.content
+        if assistant_content is None:
+            assistant_content = ""        
+        
         # adiciona a resposta ao histórico
-        chat_history.append({"role": "assistant", "content": response.choices[0].message.content})
+        chat_history.append({"role": "assistant", "content": assistant_content})
+        
         print ("\n-- Chat History:", chat_history)
         
         return response.choices[0].message.content
 
+    elif client == "openai":
+        if temperature is not None:
+            kwargs["temperature"] = temperature
+    
+        openai_client = OpenAI()
+        response = openai_client.chat.completions.create(**kwargs)
+        
+        # adiciona a resposta ao histórico
+        chat_history.append({
+            "role": "assistant",
+            "content": response.choices[0].message.content
+        })
+        
+        print("\n-- Chat History:", chat_history)
+        
+        return response.choices[0].message.content
+    
+    elif client == "google":
+        if temperature is not None:
+            kwargs["temperature"] = temperature
+    
+        google_client = genai.Client()
+    
+        # Gemini usa "contents" em vez de "messages"
+        if experiment_type == "stateless":
+            contents = prompt
+        else:
+            # converte chat_history para formato Gemini
+            contents = []
+            for msg in chat_history:
+                role = "user" if msg["role"] == "user" else "model"
+                contents.append({
+                    "role": role,
+                    "parts": [{"text": msg["content"]}]
+                })
+    
+        response = google_client.models.generate_content(
+            model=model,
+            contents=contents,
+            config={
+                "temperature": temperature if temperature is not None else 1.0
+            }
+        )
+    
+        resposta_texto = response.text
+    
+        # adiciona ao histórico
+        chat_history.append({
+            "role": "assistant",
+            "content": resposta_texto
+        })
+    
+        print("\n-- Chat History:", chat_history)
+    
+        return resposta_texto
+    
     else:
         print(">>> Warning! Invalid Client!!!")
 
@@ -100,7 +169,7 @@ def run_inv_quest_llm (persona_list, psych_domain_base_prompt, persona_list_prom
     
     start = datetime.now().strftime("%Y%m%d_%H%M%S")
     
-    exp_base_name = start + "__" + client + "_" + model  + "__p_" + psych_domain_cat + "__i_" + inv_quest_cat + "__" + experiment_type
+    exp_base_name = start + "__" + client + "_" + model.replace("/", "")  + "__p_" + psych_domain_cat + "__i_" + inv_quest_cat + "__" + experiment_type
     exp_dir = "registry/" + exp_base_name + "/"
     os.makedirs(exp_dir , exist_ok=True)
     
@@ -128,7 +197,10 @@ def run_inv_quest_llm (persona_list, psych_domain_base_prompt, persona_list_prom
             statement_start_time = time.time()
             
             resposta = llm_chat(prompt, client, model, experiment_type, temperature)
-            resposta = re.sub(r"\.$", "", resposta.strip().lower())
+            
+            resposta = re.sub(r"\.$", "", resposta.strip().lower()) # Remove "."
+            resposta = re.sub(r"response:\s*", "", resposta, flags=re.IGNORECASE).strip() # Remove "response:"
+
             
             tmp_log_list = []
     

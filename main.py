@@ -2,34 +2,41 @@
 from src.personaGenAI.experiment import AIPsychExperiment
 
 ###########################
+
+###########################
 # SETUP OPTIONS
 
 CLIENT = [
     "ollama", # 0
     "groq",   # 1
+    "openai", # 2
+    "google", # 3
     ]
 
 MODEL = [
     # ollama:
-    "gemma3:1b",       # 0 # OLLAMA
-    "gemma3:4b",       # 1 # OLLAMA
-    "gemma3:12b",      # 2 # OLLAMA
-    "gemma3:27b",      # 3 # OLLAMA
-    "gpt-oss:20b",     # 4 # OLLAMA
-    "qwen3:14b",       # 5 # OLLAMA
-    "deepseek-r1:14b", # 6 # OLLAMA
-    "llama-3.1-8b-instant", # 7 # GROQ
-    "openai/gpt-oss-120b",   # 8 # GROQ
-    "qwen2.5:14b"      # 9 # OLLAMA
+    "gemma3:1b",               #  0 # OLLAMA
+    "gemma3:4b",               #  1 # OLLAMA
+    "gemma3:12b",              #  2 # OLLAMA
+    "gemma3:27b",              #  3 # OLLAMA
+    "gpt-oss:20b",             #  4 # OLLAMA
+    "qwen3:14b",               #  5 # OLLAMA
+    "deepseek-r1:14b",         #  6 # OLLAMA
+    "llama-3.1-8b-instant",    #  7 # GROQ
+    "openai/gpt-oss-120b",     #  8 # GROQ
+    "qwen2.5:14b",             #  9 # OLLAMA
+    "llama-3.3-70b-versatile", # 10 # GROQ
+    "gpt-4o-mini",             # 11 # OPENAI
+    "gemini-2.5-flash",        # 12 # GOOGLE
     ]
 
 TEMPERATURE = 0
 
 PSYCH_DOMAIN_CAT = [
-    "personality_bigfive", # 0
-    "unspecified",         # 1
-    "morality_mft_v1",   # 2
-    "morality_mft_v2",   # 3
+    "personality_bigfive",    # 0
+    "unspecified",            # 1
+    "morality_mft_v1",        # 2
+    "morality_mft_v2",        # 3
     "personality_bigfive_mod" # 4
     ]
 
@@ -51,6 +58,8 @@ EXP_TYPE = [
     ]
 
 ###########################
+
+###########################
 # EXPERIMENT RUN
 
 # Models [service, model]:
@@ -61,9 +70,11 @@ models = {
     #"ollama - deepseek-r1:14b" : [0, 6],
     "groq - openai/gpt-oss-120b" : [1, 8],
     "ollama - qwen2.5:14b" : [0, 9],
-    #"openai - " : [,],
-    #"gemini - " : [,],
+    #"openai - gpt-4o-mini" : [2, 11],
+    #"gemini - gemini-2.5-flash" : [3, 12],
     }
+
+# https://platform.openai.com/docs/pricing
 
 # for each model [temperature, psych domain, levels, inv/quest, experiment type]:
 exps = {
@@ -96,11 +107,11 @@ exps = {
 #'''
 # SELECTED RUN
 models = {
-    "ollama - qwen2.5:14b" : [0, 9],
+    "groq - openai/gpt-oss-120b" : [1, 8],
     }
 '''
 exps = {
-    "A0 - leveled Big5 x personality ipip50 - stateless" : [0, 0, 0, 0, 0],
+    "A1 - unspecified x personality ipip50 - stateless" : [0, 1, 0, 1, 0],
     }
 # SELECTED RUN
 #'''

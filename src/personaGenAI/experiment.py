@@ -169,13 +169,16 @@ INV_QUEST = {
         "path" : "inventories_questionnaires/mfq30_pt1.csv",
         
         "base_prompt" : ''' {} 
- Answer concisely, objectively, and in the first person, based on your traits. Do not justify or explain your answers. 
- When you decide whether something is right or wrong, to what extent are the following considerations relevant to your thinking? 
+ When you decide whether something is right or wrong, to what extent are the following consideration relevant to your thinking? 
  Answer using solely {}. 
+ Answer concisely, objectively, and in the first person, based on your traits. 
+ Do not justify or explain your answers. 
 
+ Example:
  Consideration: 'Whether or not someone was good at math'. 
  Response: not at all relevant 
  
+ Now answer the following consideration: 
  Consideration: '{}'. 
  Response: ''',
             
@@ -196,13 +199,16 @@ INV_QUEST = {
         "path" : "inventories_questionnaires/mfq30_pt2.csv",
         
         "base_prompt" : ''' {} 
- Answer concisely, objectively, and in the first person, based on your traits. Do not justify or explain your answers. 
- Read the following sentences and indicate your agreement or disagreement. 
+ Read the following sentence and indicate your agreement or disagreement. 
  Answer using solely {}. 
+ Answer concisely, objectively, and in the first person, based on your traits. 
+ Do not justify or explain your answers. 
 
+ Example:
  Sentence: 'It is better to do good than to do bad.'. 
  Response: strongly agree 
  
+ Now answer the following sentence: 
  Sentence: '{}'. 
  Response: ''',
             
