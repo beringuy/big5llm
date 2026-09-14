@@ -1,0 +1,33 @@
+persona,persona_dimension_list,Harm_Care_score,Fairness_Reciprocity_score,In-group_Loyalty_score,Authority_Respect_score,Purity_Sanctity_score
+"open to experience, conscientious, extroverted, agreeable and neurotic","['open to experience', 'conscientious', 'extroverted', 'agreeable', 'neurotic']",15,15,15,15,15
+"open to experience, conscientious, extroverted, agreeable and emotionally stable","['open to experience', 'conscientious', 'extroverted', 'agreeable', 'emotionally stable']",15,15,13,13,11
+"open to experience, conscientious, extroverted, antagonistic and neurotic","['open to experience', 'conscientious', 'extroverted', 'antagonistic', 'neurotic']",7,8,2,2,2
+"open to experience, conscientious, extroverted, antagonistic and emotionally stable","['open to experience', 'conscientious', 'extroverted', 'antagonistic', 'emotionally stable']",11,10,3,6,10
+"open to experience, conscientious, introverted, agreeable and neurotic","['open to experience', 'conscientious', 'introverted', 'agreeable', 'neurotic']",15,15,13,14,12
+"open to experience, conscientious, introverted, agreeable and emotionally stable","['open to experience', 'conscientious', 'introverted', 'agreeable', 'emotionally stable']",15,15,12,14,12
+"open to experience, conscientious, introverted, antagonistic and neurotic","['open to experience', 'conscientious', 'introverted', 'antagonistic', 'neurotic']",4,5,3,5,4
+"open to experience, conscientious, introverted, antagonistic and emotionally stable","['open to experience', 'conscientious', 'introverted', 'antagonistic', 'emotionally stable']",3,9,1,2,3
+"open to experience, unconscientious, extroverted, agreeable and neurotic","['open to experience', 'unconscientious', 'extroverted', 'agreeable', 'neurotic']",15,15,15,15,15
+"open to experience, unconscientious, extroverted, agreeable and emotionally stable","['open to experience', 'unconscientious', 'extroverted', 'agreeable', 'emotionally stable']",15,15,12,15,11
+"open to experience, unconscientious, extroverted, antagonistic and neurotic","['open to experience', 'unconscientious', 'extroverted', 'antagonistic', 'neurotic']",1,3,1,0,0
+"open to experience, unconscientious, extroverted, antagonistic and emotionally stable","['open to experience', 'unconscientious', 'extroverted', 'antagonistic', 'emotionally stable']",0,2,2,2,0
+"open to experience, unconscientious, introverted, agreeable and neurotic","['open to experience', 'unconscientious', 'introverted', 'agreeable', 'neurotic']",15,15,12,15,15
+"open to experience, unconscientious, introverted, agreeable and emotionally stable","['open to experience', 'unconscientious', 'introverted', 'agreeable', 'emotionally stable']",15,15,12,15,15
+"open to experience, unconscientious, introverted, antagonistic and neurotic","['open to experience', 'unconscientious', 'introverted', 'antagonistic', 'neurotic']",1,3,2,0,1
+"open to experience, unconscientious, introverted, antagonistic and emotionally stable","['open to experience', 'unconscientious', 'introverted', 'antagonistic', 'emotionally stable']",0,0,2,1,1
+"closed to experience, conscientious, extroverted, agreeable and neurotic","['closed to experience', 'conscientious', 'extroverted', 'agreeable', 'neurotic']",15,15,15,15,15
+"closed to experience, conscientious, extroverted, agreeable and emotionally stable","['closed to experience', 'conscientious', 'extroverted', 'agreeable', 'emotionally stable']",15,15,14,15,14
+"closed to experience, conscientious, extroverted, antagonistic and neurotic","['closed to experience', 'conscientious', 'extroverted', 'antagonistic', 'neurotic']",5,3,3,6,2
+"closed to experience, conscientious, extroverted, antagonistic and emotionally stable","['closed to experience', 'conscientious', 'extroverted', 'antagonistic', 'emotionally stable']",6,10,2,6,4
+"closed to experience, conscientious, introverted, agreeable and neurotic","['closed to experience', 'conscientious', 'introverted', 'agreeable', 'neurotic']",15,15,11,15,15
+"closed to experience, conscientious, introverted, agreeable and emotionally stable","['closed to experience', 'conscientious', 'introverted', 'agreeable', 'emotionally stable']",15,15,11,14,14
+"closed to experience, conscientious, introverted, antagonistic and neurotic","['closed to experience', 'conscientious', 'introverted', 'antagonistic', 'neurotic']",2,4,1,6,5
+"closed to experience, conscientious, introverted, antagonistic and emotionally stable","['closed to experience', 'conscientious', 'introverted', 'antagonistic', 'emotionally stable']",7,2,1,6,7
+"closed to experience, unconscientious, extroverted, agreeable and neurotic","['closed to experience', 'unconscientious', 'extroverted', 'agreeable', 'neurotic']",15,15,15,15,15
+"closed to experience, unconscientious, extroverted, agreeable and emotionally stable","['closed to experience', 'unconscientious', 'extroverted', 'agreeable', 'emotionally stable']",15,15,15,15,14
+"closed to experience, unconscientious, extroverted, antagonistic and neurotic","['closed to experience', 'unconscientious', 'extroverted', 'antagonistic', 'neurotic']",0,0,1,0,0
+"closed to experience, unconscientious, extroverted, antagonistic and emotionally stable","['closed to experience', 'unconscientious', 'extroverted', 'antagonistic', 'emotionally stable']",1,0,2,1,2
+"closed to experience, unconscientious, introverted, agreeable and neurotic","['closed to experience', 'unconscientious', 'introverted', 'agreeable', 'neurotic']",15,15,13,15,15
+"closed to experience, unconscientious, introverted, agreeable and emotionally stable","['closed to experience', 'unconscientious', 'introverted', 'agreeable', 'emotionally stable']",15,15,15,15,15
+"closed to experience, unconscientious, introverted, antagonistic and neurotic","['closed to experience', 'unconscientious', 'introverted', 'antagonistic', 'neurotic']",1,1,0,0,0
+"closed to experience, unconscientious, introverted, antagonistic and emotionally stable","['closed to experience', 'unconscientious', 'introverted', 'antagonistic', 'emotionally stable']",1,1,0,0,0
