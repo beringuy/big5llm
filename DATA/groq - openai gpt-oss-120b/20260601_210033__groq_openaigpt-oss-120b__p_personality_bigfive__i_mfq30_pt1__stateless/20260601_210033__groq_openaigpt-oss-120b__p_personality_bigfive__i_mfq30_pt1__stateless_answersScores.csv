@@ -1,0 +1,321 @@
+persona,Whether or not someone suffered emotionally.,Whether or not some people were treated differently than others.,Whether or not someone’s action showed love for his or her country.,Whether or not someone showed a lack of respect for authority.,Whether or not someone violated standards of purity and decency.,Whether or not someone was good at math.,Whether or not someone cared for someone weak or vulnerable.,Whether or not someone acted unfairly.,Whether or not someone did something to betray his or her group.,Whether or not someone conformed to the traditions of society.,Whether or not someone did something disgusting.,Whether or not someone was cruel.,Whether or not someone was denied his or her rights.,Whether or not someone showed a lack of loyalty.,Whether or not an action caused chaos or disorder.,Whether or not someone acted in a way that God would approve of.
+"highly open to experience, conscientious, extroverted, agreeable and neurotic",5,5,3,4,3,0,5,5,4,3,3,5,5,5,5,3
+"slightly open to experience, conscientious, extroverted, agreeable and neurotic",4,4,4,4,4,0,5,5,5,4,4,5,4,4,4,3
+"open to experience, highly conscientious, extroverted, agreeable and neurotic",5,5,3,4,4,0,5,5,5,3,4,5,5,5,5,3
+"open to experience, slightly conscientious, extroverted, agreeable and neurotic",5,4,3,3,3,0,5,4,4,3,3,4,5,4,4,2
+"open to experience, conscientious, highly extroverted, agreeable and neurotic",5,4,4,4,4,0,5,5,5,4,4,4,5,5,5,3
+"open to experience, conscientious, slightly extroverted, agreeable and neurotic",4,4,3,4,4,0,4,4,4,3,3,5,4,4,4,3
+"open to experience, conscientious, extroverted, highly agreeable and neurotic",5,5,4,4,5,0,5,5,5,3,3,5,5,4,5,4
+"open to experience, conscientious, extroverted, slightly agreeable and neurotic",4,4,3,4,4,0,4,4,4,3,3,4,4,4,5,1
+"open to experience, conscientious, extroverted, agreeable and highly neurotic",5,4,4,4,5,1,5,5,5,3,4,5,5,5,5,4
+"open to experience, conscientious, extroverted, agreeable and slightly neurotic",4,5,4,4,4,0,5,5,5,3,4,4,5,4,4,3
+"highly open to experience, conscientious, extroverted, agreeable and emotionally stable",5,5,3,3,3,0,5,5,4,1,3,5,5,4,5,2
+"slightly open to experience, conscientious, extroverted, agreeable and emotionally stable",4,4,3,4,4,,5,4,5,3,3,4,4,4,4,1
+"open to experience, highly conscientious, extroverted, agreeable and emotionally stable",4,4,4,4,4,0,5,5,4,2,3,5,5,4,4,1
+"open to experience, slightly conscientious, extroverted, agreeable and emotionally stable",4,4,3,3,2,0,4,4,4,3,2,4,4,4,3,1
+"open to experience, conscientious, highly extroverted, agreeable and emotionally stable",4,4,3,4,4,0,5,5,5,3,1,5,5,4,5,1
+"open to experience, conscientious, slightly extroverted, agreeable and emotionally stable",4,4,3,3,3,0,5,5,4,3,3,4,4,4,4,2
+"open to experience, conscientious, extroverted, highly agreeable and emotionally stable",5,5,4,4,3,0,5,5,5,3,2,5,5,4,4,1
+"open to experience, conscientious, extroverted, slightly agreeable and emotionally stable",3,4,3,4,3,0,4,4,4,3,3,4,4,4,4,1
+"open to experience, conscientious, extroverted, agreeable and highly emotionally stable",5,5,3,4,4,0,5,5,4,3,1,4,5,5,4,1
+"open to experience, conscientious, extroverted, agreeable and slightly emotionally stable",4,4,3,4,3,0,5,4,4,3,3,5,5,4,4,2
+"highly open to experience, conscientious, extroverted, antagonistic and neurotic",2,4,3,3,3,0,3,3,5,1,4,4,4,4,4,3
+"slightly open to experience, conscientious, extroverted, antagonistic and neurotic",3,3,1,4,4,4,3,3,5,3,4,4,4,4,4,2
+"open to experience, highly conscientious, extroverted, antagonistic and neurotic",1,4,3,4,4,4,4,5,5,1,3,4,4,5,5,2
+"open to experience, slightly conscientious, extroverted, antagonistic and neurotic",2,3,2,3,1,0,3,4,4,1,4,4,3,4,4,1
+"open to experience, conscientious, highly extroverted, antagonistic and neurotic",2,4,3,3,4,0,3,5,5,2,4,5,4,5,5,2
+"open to experience, conscientious, slightly extroverted, antagonistic and neurotic",3,4,3,3,4,0,3,4,5,1,4,4,4,4,4,2
+"open to experience, conscientious, extroverted, highly antagonistic and neurotic",0,2,3,4,3,4,1,4,4,1,5,5,3,5,4,1
+"open to experience, conscientious, extroverted, slightly antagonistic and neurotic",4,4,3,4,4,0,4,4,4,3,4,4,4,4,4,2
+"open to experience, conscientious, extroverted, antagonistic and highly neurotic",1,4,4,5,3,1,3,4,5,3,4,5,4,4,4,2
+"open to experience, conscientious, extroverted, antagonistic and slightly neurotic",1,4,2,4,3,0,3,4,4,1,3,3,4,4,3,2
+"highly open to experience, conscientious, extroverted, antagonistic and emotionally stable",1,4,3,3,2,0,2,4,5,1,3,4,4,3,3,1
+"slightly open to experience, conscientious, extroverted, antagonistic and emotionally stable",1,3,3,1,2,1,1,4,4,2,3,4,4,4,4,1
+"open to experience, highly conscientious, extroverted, antagonistic and emotionally stable",2,4,3,4,2,0,3,4,5,1,3,4,4,3,5,1
+"open to experience, slightly conscientious, extroverted, antagonistic and emotionally stable",1,2,1,1,1,0,2,2,2,1,2,3,2,3,2,1
+"open to experience, conscientious, highly extroverted, antagonistic and emotionally stable",2,3,3,3,1,0,3,4,5,1,3,4,4,4,4,2
+"open to experience, conscientious, slightly extroverted, antagonistic and emotionally stable",2,4,2,3,3,0,2,4,3,2,3,4,4,4,4,2
+"open to experience, conscientious, extroverted, highly antagonistic and emotionally stable",1,4,1,2,0,1,1,3,4,2,4,4,2,3,3,1
+"open to experience, conscientious, extroverted, slightly antagonistic and emotionally stable",2,4,2,3,2,0,4,4,4,1,2,4,4,3,4,1
+"open to experience, conscientious, extroverted, antagonistic and highly emotionally stable",1,3,3,3,1,0,3,4,3,2,1,4,4,3,4,0
+"open to experience, conscientious, extroverted, antagonistic and slightly emotionally stable",3,3,3,3,3,0,3,4,4,2,3,4,4,4,4,2
+"highly open to experience, conscientious, introverted, agreeable and neurotic",5,4,4,4,4,0,5,4,4,3,4,5,5,4,5,4
+"slightly open to experience, conscientious, introverted, agreeable and neurotic",4,4,4,4,4,0,5,5,4,4,3,4,4,4,4,4
+"open to experience, highly conscientious, introverted, agreeable and neurotic",5,4,3,5,4,0,5,4,5,4,3,4,5,5,5,4
+"open to experience, slightly conscientious, introverted, agreeable and neurotic",5,4,3,3,4,0,4,4,4,2,3,4,4,4,4,2
+"open to experience, conscientious, highly introverted, agreeable and neurotic",5,4,3,5,5,0,5,5,4,3,3,5,5,5,5,4
+"open to experience, conscientious, slightly introverted, agreeable and neurotic",5,4,3,4,4,0,5,4,5,3,4,4,5,4,5,3
+"open to experience, conscientious, introverted, highly agreeable and neurotic",5,5,4,4,5,0,5,4,5,4,4,5,5,5,5,1
+"open to experience, conscientious, introverted, slightly agreeable and neurotic",4,4,3,4,3,0,4,4,4,3,3,4,4,4,4,3
+"open to experience, conscientious, introverted, agreeable and highly neurotic",5,4,3,4,4,0,5,5,5,3,3,5,5,5,5,5
+"open to experience, conscientious, introverted, agreeable and slightly neurotic",5,4,3,4,3,0,4,4,4,3,2,4,5,4,5,3
+"highly open to experience, conscientious, introverted, agreeable and emotionally stable",5,5,3,4,4,0,5,4,4,1,1,5,5,4,5,1
+"slightly open to experience, conscientious, introverted, agreeable and emotionally stable",4,4,3,4,3,0,5,4,4,3,3,4,4,4,4,1
+"open to experience, highly conscientious, introverted, agreeable and emotionally stable",4,4,3,4,4,0,4,4,4,3,2,4,5,4,4,1
+"open to experience, slightly conscientious, introverted, agreeable and emotionally stable",4,4,1,3,3,0,4,4,3,2,3,4,4,3,3,1
+"open to experience, conscientious, highly introverted, agreeable and emotionally stable",4,4,3,4,3,0,5,4,5,2,1,4,5,4,4,1
+"open to experience, conscientious, slightly introverted, agreeable and emotionally stable",4,4,3,3,2,0,4,4,4,3,2,5,5,4,4,1
+"open to experience, conscientious, introverted, highly agreeable and emotionally stable",5,4,3,4,4,0,5,5,4,3,3,5,5,4,4,1
+"open to experience, conscientious, introverted, slightly agreeable and emotionally stable",4,4,3,3,4,0,3,4,4,3,2,3,4,3,4,1
+"open to experience, conscientious, introverted, agreeable and highly emotionally stable",4,4,2,3,3,0,5,4,4,3,1,5,5,4,4,1
+"open to experience, conscientious, introverted, agreeable and slightly emotionally stable",4,4,3,4,4,0,4,4,4,3,2,4,4,4,4,2
+"highly open to experience, conscientious, introverted, antagonistic and neurotic",4,4,3,4,4,1,4,4,4,1,4,4,4,4,5,2
+"slightly open to experience, conscientious, introverted, antagonistic and neurotic",3,3,3,4,4,0,3,3,5,3,4,3,4,4,4,2
+"open to experience, highly conscientious, introverted, antagonistic and neurotic",3,4,3,4,4,0,4,5,5,3,4,5,4,5,5,3
+"open to experience, slightly conscientious, introverted, antagonistic and neurotic",1,3,2,3,3,0,3,3,3,1,3,3,4,4,4,3
+"open to experience, conscientious, highly introverted, antagonistic and neurotic",2,4,1,4,4,0,3,4,5,1,4,3,4,4,4,3
+"open to experience, conscientious, slightly introverted, antagonistic and neurotic",3,4,3,3,4,0,3,4,4,2,4,4,4,4,4,2
+"open to experience, conscientious, introverted, highly antagonistic and neurotic",2,4,3,3,4,1,2,5,5,3,5,5,4,5,4,1
+"open to experience, conscientious, introverted, slightly antagonistic and neurotic",4,4,3,4,4,3,4,4,4,3,4,4,4,5,4,3
+"open to experience, conscientious, introverted, antagonistic and highly neurotic",3,4,3,4,4,0,4,4,4,3,4,4,4,5,5,3
+"open to experience, conscientious, introverted, antagonistic and slightly neurotic",3,4,2,4,3,1,3,4,5,1,3,4,4,3,4,1
+"highly open to experience, conscientious, introverted, antagonistic and emotionally stable",2,3,2,4,3,0,3,3,4,1,3,4,4,3,4,1
+"slightly open to experience, conscientious, introverted, antagonistic and emotionally stable",2,3,3,3,3,0,1,4,4,3,3,3,3,3,4,1
+"open to experience, highly conscientious, introverted, antagonistic and emotionally stable",2,4,3,3,4,0,3,4,4,2,4,4,4,4,4,1
+"open to experience, slightly conscientious, introverted, antagonistic and emotionally stable",1,2,1,2,1,,2,3,2,1,3,4,2,2,2,1
+"open to experience, conscientious, highly introverted, antagonistic and emotionally stable",1,4,2,3,3,0,3,4,3,2,3,4,4,4,4,1
+"open to experience, conscientious, slightly introverted, antagonistic and emotionally stable",3,4,2,3,3,0,3,4,4,2,3,3,4,4,4,1
+"open to experience, conscientious, introverted, highly antagonistic and emotionally stable",2,2,1,4,4,0,1,3,5,1,4,4,1,5,4,1
+"open to experience, conscientious, introverted, slightly antagonistic and emotionally stable",3,4,2,3,3,0,4,4,4,1,3,4,4,4,4,0
+"open to experience, conscientious, introverted, antagonistic and highly emotionally stable",2,4,3,3,3,0,3,4,4,2,1,3,3,5,4,1
+"open to experience, conscientious, introverted, antagonistic and slightly emotionally stable",3,3,3,3,3,0,3,4,4,1,3,3,4,4,4,1
+"highly open to experience, unconscientious, extroverted, agreeable and neurotic",4,4,3,3,1,,5,4,4,2,4,5,5,4,3,1
+"slightly open to experience, unconscientious, extroverted, agreeable and neurotic",4,4,3,2,1,0,5,4,4,3,4,4,4,4,3,2
+"open to experience, highly unconscientious, extroverted, agreeable and neurotic",5,4,1,2,2,0,5,4,3,,3,5,4,3,3,1
+"open to experience, slightly unconscientious, extroverted, agreeable and neurotic",5,4,3,3,3,0,5,4,4,3,3,5,4,4,4,2
+"open to experience, unconscientious, highly extroverted, agreeable and neurotic",5,4,3,3,3,0,5,4,5,2,3,5,,3,3,1
+"open to experience, unconscientious, slightly extroverted, agreeable and neurotic",5,4,3,3,,0,5,4,4,2,3,4,4,4,3,1
+"open to experience, unconscientious, extroverted, highly agreeable and neurotic",5,4,3,1,4,0,5,5,4,3,4,5,4,4,5,1
+"open to experience, unconscientious, extroverted, slightly agreeable and neurotic",4,4,3,1,2,1,3,3,3,2,3,3,3,3,3,1
+"open to experience, unconscientious, extroverted, agreeable and highly neurotic",5,4,3,2,3,0,5,5,4,3,4,5,5,5,4,1
+"open to experience, unconscientious, extroverted, agreeable and slightly neurotic",4,4,3,2,1,0,4,4,4,2,3,4,4,4,3,1
+"highly open to experience, unconscientious, extroverted, agreeable and emotionally stable",5,4,1,1,1,0,5,4,3,1,2,5,4,3,1,1
+"slightly open to experience, unconscientious, extroverted, agreeable and emotionally stable",4,4,3,2,2,0,4,4,4,3,2,4,4,3,3,1
+"open to experience, highly unconscientious, extroverted, agreeable and emotionally stable",4,4,1,1,2,0,4,4,3,1,1,4,4,4,1,0
+"open to experience, slightly unconscientious, extroverted, agreeable and emotionally stable",4,4,3,2,2,0,4,4,3,1,1,4,4,4,3,1
+"open to experience, unconscientious, highly extroverted, agreeable and emotionally stable",4,4,2,2,1,0,4,4,4,1,2,5,4,3,1,1
+"open to experience, unconscientious, slightly extroverted, agreeable and emotionally stable",4,4,2,1,1,0,4,4,3,1,2,4,4,3,2,1
+"open to experience, unconscientious, extroverted, highly agreeable and emotionally stable",5,5,2,2,1,0,5,5,4,1,2,5,5,4,3,1
+"open to experience, unconscientious, extroverted, slightly agreeable and emotionally stable",3,3,2,1,2,0,3,3,3,1,2,3,3,3,1,1
+"open to experience, unconscientious, extroverted, agreeable and highly emotionally stable",4,4,3,2,2,,4,4,3,1,2,5,4,3,3,1
+"open to experience, unconscientious, extroverted, agreeable and slightly emotionally stable",4,4,2,2,2,0,4,4,3,1,2,4,4,3,2,1
+"highly open to experience, unconscientious, extroverted, antagonistic and neurotic",1,1,1,4,1,1,1,1,2,1,4,1,1,1,3,0
+"slightly open to experience, unconscientious, extroverted, antagonistic and neurotic",1,2,1,2,1,0,1,1,4,1,4,3,1,1,4,1
+"open to experience, highly unconscientious, extroverted, antagonistic and neurotic",0,2,1,4,1,0,1,2,3,0,4,2,1,3,3,1
+"open to experience, slightly unconscientious, extroverted, antagonistic and neurotic",1,2,1,4,1,0,1,2,1,1,4,3,3,2,2,1
+"open to experience, unconscientious, highly extroverted, antagonistic and neurotic",1,2,1,1,1,0,1,3,4,1,4,3,1,3,2,0
+"open to experience, unconscientious, slightly extroverted, antagonistic and neurotic",1,1,1,2,1,0,2,3,1,1,4,1,3,3,3,2
+"open to experience, unconscientious, extroverted, highly antagonistic and neurotic",0,1,1,4,1,1,1,1,4,1,4,1,0,4,3,0
+"open to experience, unconscientious, extroverted, slightly antagonistic and neurotic",1,3,2,2,1,0,3,4,3,1,4,2,3,4,2,1
+"open to experience, unconscientious, extroverted, antagonistic and highly neurotic",2,,1,4,1,0,2,3,3,1,4,3,1,3,4,2
+"open to experience, unconscientious, extroverted, antagonistic and slightly neurotic",1,1,1,3,1,1,1,2,2,1,3,1,2,3,2,0
+"highly open to experience, unconscientious, extroverted, antagonistic and emotionally stable",0,1,1,0,0,0,1,1,1,1,1,2,1,1,1,0
+"slightly open to experience, unconscientious, extroverted, antagonistic and emotionally stable",0,0,1,0,1,,1,2,1,1,1,0,0,1,0,0
+"open to experience, highly unconscientious, extroverted, antagonistic and emotionally stable",0,1,1,1,0,,1,1,1,0,1,2,0,1,0,0
+"open to experience, slightly unconscientious, extroverted, antagonistic and emotionally stable",0,2,1,1,1,0,1,1,4,0,2,3,1,2,1,1
+"open to experience, unconscientious, highly extroverted, antagonistic and emotionally stable",1,2,1,1,0,0,1,1,2,1,1,1,1,2,1,0
+"open to experience, unconscientious, slightly extroverted, antagonistic and emotionally stable",0,1,1,1,1,0,1,2,1,1,2,0,1,2,1,0
+"open to experience, unconscientious, extroverted, highly antagonistic and emotionally stable",0,1,0,0,0,0,0,1,1,0,4,0,0,1,0,0
+"open to experience, unconscientious, extroverted, slightly antagonistic and emotionally stable",1,2,1,1,1,0,2,2,2,1,2,2,2,1,1,0
+"open to experience, unconscientious, extroverted, antagonistic and highly emotionally stable",0,1,1,1,0,0,1,3,1,1,3,1,0,1,1,0
+"open to experience, unconscientious, extroverted, antagonistic and slightly emotionally stable",0,1,1,1,0,0,1,2,1,0,4,3,1,1,2,0
+"highly open to experience, unconscientious, introverted, agreeable and neurotic",5,4,3,3,3,0,4,4,4,1,3,5,4,4,4,1
+"slightly open to experience, unconscientious, introverted, agreeable and neurotic",4,4,2,2,3,0,4,4,4,3,3,5,4,4,3,2
+"open to experience, highly unconscientious, introverted, agreeable and neurotic",5,4,2,2,1,0,4,4,1,2,3,5,4,4,3,1
+"open to experience, slightly unconscientious, introverted, agreeable and neurotic",4,4,3,2,3,0,4,4,3,2,3,4,5,4,4,1
+"open to experience, unconscientious, highly introverted, agreeable and neurotic",5,4,2,3,2,0,5,4,3,2,3,4,4,4,3,1
+"open to experience, unconscientious, slightly introverted, agreeable and neurotic",5,4,2,3,,1,4,4,4,2,4,5,4,4,3,2
+"open to experience, unconscientious, introverted, highly agreeable and neurotic",5,4,2,2,3,0,5,4,4,3,4,5,4,4,4,2
+"open to experience, unconscientious, introverted, slightly agreeable and neurotic",4,3,1,2,3,0,3,3,3,2,3,3,4,3,3,2
+"open to experience, unconscientious, introverted, agreeable and highly neurotic",5,4,2,3,3,0,4,5,4,2,3,5,4,4,4,2
+"open to experience, unconscientious, introverted, agreeable and slightly neurotic",4,4,2,3,2,0,4,4,4,2,3,4,4,4,3,1
+"highly open to experience, unconscientious, introverted, agreeable and emotionally stable",4,4,1,1,1,0,5,4,3,1,1,4,4,4,1,1
+"slightly open to experience, unconscientious, introverted, agreeable and emotionally stable",4,4,2,2,2,0,5,4,3,2,2,4,4,3,1,1
+"open to experience, highly unconscientious, introverted, agreeable and emotionally stable",4,3,1,1,1,0,4,4,1,1,2,4,3,3,1,1
+"open to experience, slightly unconscientious, introverted, agreeable and emotionally stable",4,4,2,3,1,0,5,4,3,1,2,4,4,4,3,1
+"open to experience, unconscientious, highly introverted, agreeable and emotionally stable",4,4,2,1,1,0,5,4,1,1,2,4,4,3,2,1
+"open to experience, unconscientious, slightly introverted, agreeable and emotionally stable",4,4,1,1,1,0,4,4,3,1,3,4,4,3,1,1
+"open to experience, unconscientious, introverted, highly agreeable and emotionally stable",4,4,1,1,2,0,5,4,3,1,1,5,4,4,3,1
+"open to experience, unconscientious, introverted, slightly agreeable and emotionally stable",3,3,1,1,1,0,3,3,2,1,2,3,3,2,1,1
+"open to experience, unconscientious, introverted, agreeable and highly emotionally stable",4,4,1,1,1,0,5,4,3,1,2,4,4,2,2,1
+"open to experience, unconscientious, introverted, agreeable and slightly emotionally stable",4,4,1,1,2,0,4,4,3,1,3,4,4,3,2,1
+"highly open to experience, unconscientious, introverted, antagonistic and neurotic",0,1,1,3,1,0,0,2,3,1,4,1,1,4,4,1
+"slightly open to experience, unconscientious, introverted, antagonistic and neurotic",1,1,1,2,1,0,1,2,4,1,3,2,1,4,3,1
+"open to experience, highly unconscientious, introverted, antagonistic and neurotic",0,2,1,3,1,0,1,1,1,1,2,2,0,2,1,1
+"open to experience, slightly unconscientious, introverted, antagonistic and neurotic",2,3,1,1,2,0,2,3,2,1,4,3,2,3,3,1
+"open to experience, unconscientious, highly introverted, antagonistic and neurotic",2,1,1,2,2,0,1,3,3,1,4,3,1,3,3,1
+"open to experience, unconscientious, slightly introverted, antagonistic and neurotic",3,3,1,4,1,0,3,3,3,1,4,3,1,3,1,1
+"open to experience, unconscientious, introverted, highly antagonistic and neurotic",0,1,1,4,0,0,0,4,3,0,4,3,1,3,2,0
+"open to experience, unconscientious, introverted, slightly antagonistic and neurotic",2,2,1,2,1,0,2,3,2,1,2,3,2,3,3,0
+"open to experience, unconscientious, introverted, antagonistic and highly neurotic",1,3,1,3,2,0,1,1,3,2,4,3,1,3,2,1
+"open to experience, unconscientious, introverted, antagonistic and slightly neurotic",1,3,0,4,1,0,3,3,3,1,3,1,1,3,3,1
+"highly open to experience, unconscientious, introverted, antagonistic and emotionally stable",1,1,0,2,0,0,1,1,1,0,0,1,1,1,1,0
+"slightly open to experience, unconscientious, introverted, antagonistic and emotionally stable",1,1,1,1,0,0,1,1,2,1,3,1,1,1,1,0
+"open to experience, highly unconscientious, introverted, antagonistic and emotionally stable",0,1,0,1,0,0,0,1,0,0,0,0,1,1,0,0
+"open to experience, slightly unconscientious, introverted, antagonistic and emotionally stable",1,1,1,2,1,2,2,3,1,1,2,1,0,1,1,0
+"open to experience, unconscientious, highly introverted, antagonistic and emotionally stable",1,1,0,1,0,0,1,1,0,0,1,0,1,1,1,0
+"open to experience, unconscientious, slightly introverted, antagonistic and emotionally stable",1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0
+"open to experience, unconscientious, introverted, highly antagonistic and emotionally stable",0,0,0,4,0,0,0,1,1,0,2,0,1,0,0,0
+"open to experience, unconscientious, introverted, slightly antagonistic and emotionally stable",1,2,1,1,1,0,2,3,1,1,2,2,1,2,1,0
+"open to experience, unconscientious, introverted, antagonistic and highly emotionally stable",1,1,0,1,0,0,1,1,1,0,1,1,0,0,0,0
+"open to experience, unconscientious, introverted, antagonistic and slightly emotionally stable",1,1,1,2,1,0,1,2,2,1,3,2,1,1,1,0
+"highly closed to experience, conscientious, extroverted, agreeable and neurotic",4,4,4,5,5,0,4,4,5,5,4,5,4,5,5,3
+"slightly closed to experience, conscientious, extroverted, agreeable and neurotic",4,4,4,4,4,,5,5,4,4,4,4,4,5,5,5
+"closed to experience, highly conscientious, extroverted, agreeable and neurotic",4,4,4,5,5,1,5,4,5,4,4,4,5,5,5,3
+"closed to experience, slightly conscientious, extroverted, agreeable and neurotic",4,4,3,4,5,0,4,4,5,4,3,4,4,4,4,2
+"closed to experience, conscientious, highly extroverted, agreeable and neurotic",5,5,4,5,5,0,4,5,5,5,4,4,5,5,4,2
+"closed to experience, conscientious, slightly extroverted, agreeable and neurotic",4,4,4,4,4,1,4,4,5,5,4,4,5,5,5,3
+"closed to experience, conscientious, extroverted, highly agreeable and neurotic",5,4,5,4,5,0,5,5,5,5,4,4,5,5,5,2
+"closed to experience, conscientious, extroverted, slightly agreeable and neurotic",3,4,4,4,4,0,3,4,4,4,4,3,4,4,5,3
+"closed to experience, conscientious, extroverted, agreeable and highly neurotic",5,5,4,5,5,0,4,5,5,5,4,5,5,5,5,2
+"closed to experience, conscientious, extroverted, agreeable and slightly neurotic",4,4,4,4,4,0,4,5,5,5,4,4,5,5,4,3
+"highly closed to experience, conscientious, extroverted, agreeable and emotionally stable",4,4,4,4,4,0,5,5,5,5,3,4,4,4,4,2
+"slightly closed to experience, conscientious, extroverted, agreeable and emotionally stable",4,4,4,4,4,1,4,5,5,4,4,4,4,4,4,2
+"closed to experience, highly conscientious, extroverted, agreeable and emotionally stable",4,4,4,4,5,0,5,4,5,5,3,4,5,5,4,2
+"closed to experience, slightly conscientious, extroverted, agreeable and emotionally stable",4,3,3,4,3,0,4,4,4,4,3,4,4,4,4,1
+"closed to experience, conscientious, highly extroverted, agreeable and emotionally stable",3,4,3,4,4,0,4,5,5,4,4,5,5,5,5,1
+"closed to experience, conscientious, slightly extroverted, agreeable and emotionally stable",3,4,4,4,4,,4,5,5,4,2,4,4,4,4,3
+"closed to experience, conscientious, extroverted, highly agreeable and emotionally stable",4,4,3,5,3,0,4,5,5,4,2,5,5,5,4,1
+"closed to experience, conscientious, extroverted, slightly agreeable and emotionally stable",3,4,4,4,4,0,3,4,4,4,2,3,4,4,4,3
+"closed to experience, conscientious, extroverted, agreeable and highly emotionally stable",4,5,4,4,4,0,5,5,4,5,3,5,4,4,4,1
+"closed to experience, conscientious, extroverted, agreeable and slightly emotionally stable",4,4,4,4,4,,4,5,5,4,3,4,4,4,4,2
+"highly closed to experience, conscientious, extroverted, antagonistic and neurotic",1,2,3,5,4,0,1,3,5,4,4,4,3,5,5,1
+"slightly closed to experience, conscientious, extroverted, antagonistic and neurotic",2,3,3,4,4,3,3,3,5,4,4,4,4,5,5,1
+"closed to experience, highly conscientious, extroverted, antagonistic and neurotic",2,1,3,5,5,1,1,3,5,4,4,4,3,5,4,1
+"closed to experience, slightly conscientious, extroverted, antagonistic and neurotic",2,3,1,3,2,,1,4,5,3,3,3,1,3,3,1
+"closed to experience, conscientious, highly extroverted, antagonistic and neurotic",0,3,4,5,5,2,2,3,5,3,3,4,4,5,5,2
+"closed to experience, conscientious, slightly extroverted, antagonistic and neurotic",2,3,3,4,5,3,3,4,5,4,3,4,3,4,4,2
+"closed to experience, conscientious, extroverted, highly antagonistic and neurotic",0,3,3,4,5,0,1,3,5,4,4,5,1,5,5,2
+"closed to experience, conscientious, extroverted, slightly antagonistic and neurotic",3,3,3,4,4,0,3,4,5,4,3,4,4,4,4,3
+"closed to experience, conscientious, extroverted, antagonistic and highly neurotic",1,4,3,5,5,0,3,4,5,4,4,3,3,5,5,2
+"closed to experience, conscientious, extroverted, antagonistic and slightly neurotic",2,3,3,4,4,1,2,3,5,4,4,3,3,4,4,1
+"highly closed to experience, conscientious, extroverted, antagonistic and emotionally stable",1,1,1,4,4,0,1,3,5,4,4,3,1,4,4,1
+"slightly closed to experience, conscientious, extroverted, antagonistic and emotionally stable",1,4,2,4,4,0,1,4,5,4,4,4,4,4,5,1
+"closed to experience, highly conscientious, extroverted, antagonistic and emotionally stable",1,3,4,4,3,0,1,3,5,5,4,1,3,3,4,1
+"closed to experience, slightly conscientious, extroverted, antagonistic and emotionally stable",1,1,1,1,1,0,1,2,3,3,3,3,1,2,3,1
+"closed to experience, conscientious, highly extroverted, antagonistic and emotionally stable",0,2,3,4,4,0,1,3,4,5,3,4,1,4,4,1
+"closed to experience, conscientious, slightly extroverted, antagonistic and emotionally stable",1,4,2,4,4,0,2,4,5,5,3,3,3,4,4,0
+"closed to experience, conscientious, extroverted, highly antagonistic and emotionally stable",0,3,1,4,4,0,0,4,5,4,2,3,2,2,4,0
+"closed to experience, conscientious, extroverted, slightly antagonistic and emotionally stable",1,4,3,3,4,0,3,4,4,4,3,4,4,4,4,3
+"closed to experience, conscientious, extroverted, antagonistic and highly emotionally stable",1,1,3,4,4,0,1,3,4,4,1,3,3,5,4,0
+"closed to experience, conscientious, extroverted, antagonistic and slightly emotionally stable",1,3,1,4,4,0,1,3,5,3,3,2,3,3,4,1
+"highly closed to experience, conscientious, introverted, agreeable and neurotic",4,4,4,5,5,0,5,4,5,5,3,5,4,5,5,4
+"slightly closed to experience, conscientious, introverted, agreeable and neurotic",4,4,3,4,4,0,4,4,4,5,4,5,5,4,4,4
+"closed to experience, highly conscientious, introverted, agreeable and neurotic",5,4,3,5,5,0,4,4,5,5,4,5,4,4,4,4
+"closed to experience, slightly conscientious, introverted, agreeable and neurotic",4,4,2,4,4,1,4,4,4,4,4,4,4,4,4,3
+"closed to experience, conscientious, highly introverted, agreeable and neurotic",5,4,3,5,5,1,5,4,5,5,3,4,5,5,5,3
+"closed to experience, conscientious, slightly introverted, agreeable and neurotic",4,4,3,4,4,0,4,5,5,5,4,5,4,5,5,4
+"closed to experience, conscientious, introverted, highly agreeable and neurotic",4,4,4,5,5,0,5,5,5,4,3,5,5,5,5,3
+"closed to experience, conscientious, introverted, slightly agreeable and neurotic",3,4,3,4,4,1,4,4,4,5,3,4,4,4,5,2
+"closed to experience, conscientious, introverted, agreeable and highly neurotic",4,4,2,4,4,0,4,4,5,4,4,4,5,5,4,3
+"closed to experience, conscientious, introverted, agreeable and slightly neurotic",4,5,3,4,4,0,4,4,5,4,3,4,4,4,4,2
+"highly closed to experience, conscientious, introverted, agreeable and emotionally stable",3,4,3,4,4,0,4,5,5,4,1,5,4,4,4,3
+"slightly closed to experience, conscientious, introverted, agreeable and emotionally stable",4,4,3,4,4,0,4,5,4,4,2,4,4,4,4,3
+"closed to experience, highly conscientious, introverted, agreeable and emotionally stable",3,4,1,4,4,0,4,5,5,5,2,4,4,5,4,2
+"closed to experience, slightly conscientious, introverted, agreeable and emotionally stable",3,3,3,4,3,0,4,4,4,3,2,4,3,3,3,1
+"closed to experience, conscientious, highly introverted, agreeable and emotionally stable",3,4,3,4,4,0,4,5,4,4,2,4,4,4,,1
+"closed to experience, conscientious, slightly introverted, agreeable and emotionally stable",3,4,3,5,4,0,4,4,4,4,1,4,4,4,4,3
+"closed to experience, conscientious, introverted, highly agreeable and emotionally stable",3,4,3,5,4,0,5,5,4,5,3,4,4,5,5,3
+"closed to experience, conscientious, introverted, slightly agreeable and emotionally stable",3,4,1,4,4,0,3,3,4,4,3,4,4,4,5,1
+"closed to experience, conscientious, introverted, agreeable and highly emotionally stable",3,4,1,4,5,,4,5,5,4,1,5,4,4,4,2
+"closed to experience, conscientious, introverted, agreeable and slightly emotionally stable",4,4,3,4,4,0,4,4,4,5,2,4,4,4,4,4
+"highly closed to experience, conscientious, introverted, antagonistic and neurotic",3,3,3,4,5,0,1,4,5,5,3,4,3,4,4,3
+"slightly closed to experience, conscientious, introverted, antagonistic and neurotic",3,3,3,4,4,1,1,4,4,4,4,4,3,4,4,2
+"closed to experience, highly conscientious, introverted, antagonistic and neurotic",1,4,3,4,5,1,1,4,5,5,3,4,3,4,4,1
+"closed to experience, slightly conscientious, introverted, antagonistic and neurotic",1,1,1,3,3,1,2,3,4,3,4,3,1,4,3,1
+"closed to experience, conscientious, highly introverted, antagonistic and neurotic",1,4,1,4,5,0,0,3,5,4,2,4,3,5,4,1
+"closed to experience, conscientious, slightly introverted, antagonistic and neurotic",1,4,3,4,5,1,3,4,5,4,3,4,4,5,4,2
+"closed to experience, conscientious, introverted, highly antagonistic and neurotic",1,3,2,5,5,1,1,3,5,4,3,4,1,5,5,1
+"closed to experience, conscientious, introverted, slightly antagonistic and neurotic",1,4,1,4,4,0,4,4,5,4,3,4,3,4,5,3
+"closed to experience, conscientious, introverted, antagonistic and highly neurotic",2,3,3,5,5,4,2,4,5,5,3,3,3,4,5,2
+"closed to experience, conscientious, introverted, antagonistic and slightly neurotic",1,3,3,4,4,1,3,4,5,4,3,3,4,4,5,2
+"highly closed to experience, conscientious, introverted, antagonistic and emotionally stable",1,3,1,4,4,0,1,3,5,4,1,3,1,4,4,1
+"slightly closed to experience, conscientious, introverted, antagonistic and emotionally stable",1,3,2,4,5,2,1,4,4,4,2,4,4,4,4,1
+"closed to experience, highly conscientious, introverted, antagonistic and emotionally stable",1,4,3,4,5,0,1,4,5,5,4,4,4,4,5,1
+"closed to experience, slightly conscientious, introverted, antagonistic and emotionally stable",1,1,1,1,1,0,1,1,4,3,3,1,0,3,3,1
+"closed to experience, conscientious, highly introverted, antagonistic and emotionally stable",1,3,2,4,4,1,1,3,4,5,2,3,1,4,4,1
+"closed to experience, conscientious, slightly introverted, antagonistic and emotionally stable",1,3,3,4,4,0,1,4,5,4,1,3,3,4,4,2
+"closed to experience, conscientious, introverted, highly antagonistic and emotionally stable",0,4,2,1,5,3,1,4,5,1,2,1,3,4,4,1
+"closed to experience, conscientious, introverted, slightly antagonistic and emotionally stable",1,3,1,4,4,0,3,4,4,4,1,4,4,4,4,1
+"closed to experience, conscientious, introverted, antagonistic and highly emotionally stable",1,3,1,4,4,1,1,3,5,3,2,3,1,4,4,1
+"closed to experience, conscientious, introverted, antagonistic and slightly emotionally stable",1,3,2,4,4,0,1,4,4,3,2,3,1,2,4,1
+"highly closed to experience, unconscientious, extroverted, agreeable and neurotic",5,4,3,3,2,0,4,4,4,4,4,5,4,5,4,2
+"slightly closed to experience, unconscientious, extroverted, agreeable and neurotic",4,4,3,3,4,0,5,4,4,3,3,4,4,4,4,3
+"closed to experience, highly unconscientious, extroverted, agreeable and neurotic",4,4,3,3,2,0,4,4,5,3,3,4,4,5,4,1
+"closed to experience, slightly unconscientious, extroverted, agreeable and neurotic",4,4,3,4,4,0,5,4,5,4,3,4,4,4,4,2
+"closed to experience, unconscientious, highly extroverted, agreeable and neurotic",5,4,3,3,4,,5,4,5,4,3,5,4,5,4,1
+"closed to experience, unconscientious, slightly extroverted, agreeable and neurotic",4,4,3,4,4,0,4,4,4,4,4,4,4,4,3,3
+"closed to experience, unconscientious, extroverted, highly agreeable and neurotic",5,4,4,4,5,,5,5,4,4,4,5,5,5,4,1
+"closed to experience, unconscientious, extroverted, slightly agreeable and neurotic",2,3,3,3,2,0,3,3,4,3,3,3,3,3,3,1
+"closed to experience, unconscientious, extroverted, agreeable and highly neurotic",5,4,3,4,5,,5,4,5,4,4,5,3,4,4,2
+"closed to experience, unconscientious, extroverted, agreeable and slightly neurotic",4,4,3,3,3,0,5,3,4,3,3,4,4,4,3,1
+"highly closed to experience, unconscientious, extroverted, agreeable and emotionally stable",3,4,3,3,1,0,4,4,4,3,1,5,4,4,2,1
+"slightly closed to experience, unconscientious, extroverted, agreeable and emotionally stable",2,4,3,3,3,,4,4,4,3,3,4,3,4,3,1
+"closed to experience, highly unconscientious, extroverted, agreeable and emotionally stable",3,3,2,3,1,0,4,4,4,4,3,4,4,4,1,1
+"closed to experience, slightly unconscientious, extroverted, agreeable and emotionally stable",3,4,3,4,3,1,5,4,4,4,2,4,4,4,3,0
+"closed to experience, unconscientious, highly extroverted, agreeable and emotionally stable",4,4,3,3,3,0,4,4,4,4,2,4,4,4,3,1
+"closed to experience, unconscientious, slightly extroverted, agreeable and emotionally stable",2,3,3,1,2,0,4,4,4,3,2,4,4,4,3,1
+"closed to experience, unconscientious, extroverted, highly agreeable and emotionally stable",4,4,3,3,2,0,5,4,4,4,2,4,5,4,3,1
+"closed to experience, unconscientious, extroverted, slightly agreeable and emotionally stable",1,3,2,1,2,0,2,3,3,3,3,3,2,3,1,1
+"closed to experience, unconscientious, extroverted, agreeable and highly emotionally stable",4,4,1,3,2,0,4,4,4,3,2,4,3,4,2,1
+"closed to experience, unconscientious, extroverted, agreeable and slightly emotionally stable",4,4,3,3,4,,4,4,4,3,3,4,4,4,3,0
+"highly closed to experience, unconscientious, extroverted, antagonistic and neurotic",0,1,0,3,1,0,0,1,4,3,4,3,0,1,2,1
+"slightly closed to experience, unconscientious, extroverted, antagonistic and neurotic",0,1,0,0,1,1,0,1,5,2,3,2,1,3,3,0
+"closed to experience, highly unconscientious, extroverted, antagonistic and neurotic",0,1,1,4,1,0,0,1,3,0,4,1,0,1,4,1
+"closed to experience, slightly unconscientious, extroverted, antagonistic and neurotic",1,1,1,4,1,0,1,3,4,3,4,1,1,4,3,1
+"closed to experience, unconscientious, highly extroverted, antagonistic and neurotic",0,1,1,1,1,0,0,1,4,1,4,2,1,3,3,0
+"closed to experience, unconscientious, slightly extroverted, antagonistic and neurotic",2,1,1,1,2,0,0,1,1,1,4,1,1,3,4,1
+"closed to experience, unconscientious, extroverted, highly antagonistic and neurotic",0,1,0,4,4,0,0,1,4,1,4,1,0,5,4,0
+"closed to experience, unconscientious, extroverted, slightly antagonistic and neurotic",1,2,1,2,1,0,2,3,4,3,2,2,1,3,4,2
+"closed to experience, unconscientious, extroverted, antagonistic and highly neurotic",1,1,0,2,1,1,1,1,4,1,4,2,0,4,4,0
+"closed to experience, unconscientious, extroverted, antagonistic and slightly neurotic",0,0,1,3,1,0,0,1,3,0,2,1,1,1,1,0
+"highly closed to experience, unconscientious, extroverted, antagonistic and emotionally stable",0,0,0,0,0,0,0,1,0,2,1,0,0,0,0,0
+"slightly closed to experience, unconscientious, extroverted, antagonistic and emotionally stable",0,1,1,1,1,0,0,1,1,1,2,0,1,1,1,0
+"closed to experience, highly unconscientious, extroverted, antagonistic and emotionally stable",0,0,0,0,0,0,0,1,3,1,1,0,0,2,0,0
+"closed to experience, slightly unconscientious, extroverted, antagonistic and emotionally stable",0,1,1,1,0,1,0,1,1,1,3,1,1,1,1,0
+"closed to experience, unconscientious, highly extroverted, antagonistic and emotionally stable",0,1,0,0,0,0,0,1,1,3,3,0,0,0,1,0
+"closed to experience, unconscientious, slightly extroverted, antagonistic and emotionally stable",0,1,0,0,1,0,0,2,1,1,3,1,0,2,0,0
+"closed to experience, unconscientious, extroverted, highly antagonistic and emotionally stable",0,1,0,0,0,0,0,1,4,0,2,1,1,3,0,0
+"closed to experience, unconscientious, extroverted, slightly antagonistic and emotionally stable",0,1,1,2,1,0,1,1,3,2,3,0,1,3,2,0
+"closed to experience, unconscientious, extroverted, antagonistic and highly emotionally stable",0,0,0,0,0,0,0,1,0,2,3,1,0,1,1,0
+"closed to experience, unconscientious, extroverted, antagonistic and slightly emotionally stable",0,2,0,1,0,,1,1,2,1,1,1,0,2,4,0
+"highly closed to experience, unconscientious, introverted, agreeable and neurotic",4,3,2,2,3,0,4,4,4,4,4,4,4,4,4,3
+"slightly closed to experience, unconscientious, introverted, agreeable and neurotic",4,4,2,3,3,0,5,4,4,4,4,4,4,4,4,2
+"closed to experience, highly unconscientious, introverted, agreeable and neurotic",4,3,2,3,3,,5,4,4,3,4,5,3,4,3,1
+"closed to experience, slightly unconscientious, introverted, agreeable and neurotic",4,4,3,4,4,0,4,4,4,4,3,4,4,4,3,2
+"closed to experience, unconscientious, highly introverted, agreeable and neurotic",5,3,2,3,3,0,4,4,4,4,3,4,4,4,4,1
+"closed to experience, unconscientious, slightly introverted, agreeable and neurotic",5,3,1,3,4,0,4,4,4,4,3,4,4,4,4,2
+"closed to experience, unconscientious, introverted, highly agreeable and neurotic",5,4,1,4,4,0,5,4,5,4,3,5,4,5,5,1
+"closed to experience, unconscientious, introverted, slightly agreeable and neurotic",3,3,2,3,3,0,3,3,4,3,4,4,3,3,3,1
+"closed to experience, unconscientious, introverted, agreeable and highly neurotic",5,3,2,3,4,0,5,4,5,4,4,4,4,4,5,1
+"closed to experience, unconscientious, introverted, agreeable and slightly neurotic",4,4,2,2,3,0,4,4,4,3,3,4,3,4,4,1
+"highly closed to experience, unconscientious, introverted, agreeable and emotionally stable",3,4,1,3,1,0,4,3,4,4,1,4,4,4,2,1
+"slightly closed to experience, unconscientious, introverted, agreeable and emotionally stable",3,3,1,2,3,0,4,4,3,2,2,4,3,4,3,1
+"closed to experience, highly unconscientious, introverted, agreeable and emotionally stable",3,3,1,1,2,0,4,4,4,2,1,4,4,5,1,1
+"closed to experience, slightly unconscientious, introverted, agreeable and emotionally stable",3,3,1,3,3,1,4,4,4,3,2,4,4,4,3,1
+"closed to experience, unconscientious, highly introverted, agreeable and emotionally stable",3,3,1,1,1,,4,4,3,3,1,4,3,3,3,1
+"closed to experience, unconscientious, slightly introverted, agreeable and emotionally stable",3,3,1,2,3,0,4,4,4,3,1,4,3,4,1,1
+"closed to experience, unconscientious, introverted, highly agreeable and emotionally stable",3,4,2,3,4,0,5,4,4,4,2,4,4,4,1,1
+"closed to experience, unconscientious, introverted, slightly agreeable and emotionally stable",2,2,1,3,2,0,2,3,2,3,2,3,3,2,3,1
+"closed to experience, unconscientious, introverted, agreeable and highly emotionally stable",3,3,1,2,3,,4,4,4,3,1,4,3,4,4,1
+"closed to experience, unconscientious, introverted, agreeable and slightly emotionally stable",3,3,1,3,3,,4,4,4,3,2,4,3,3,2,1
+"highly closed to experience, unconscientious, introverted, antagonistic and neurotic",0,1,1,2,0,0,0,3,3,2,3,1,0,2,4,0
+"slightly closed to experience, unconscientious, introverted, antagonistic and neurotic",1,2,1,0,1,0,1,1,3,1,4,3,1,1,3,1
+"closed to experience, highly unconscientious, introverted, antagonistic and neurotic",0,1,0,1,1,0,0,1,1,1,4,1,0,1,4,0
+"closed to experience, slightly unconscientious, introverted, antagonistic and neurotic",0,1,1,3,3,0,0,1,1,1,3,3,1,3,3,1
+"closed to experience, unconscientious, highly introverted, antagonistic and neurotic",0,1,0,2,1,0,0,2,1,2,2,1,0,3,3,0
+"closed to experience, unconscientious, slightly introverted, antagonistic and neurotic",1,0,0,3,1,0,0,1,2,1,3,1,1,2,3,1
+"closed to experience, unconscientious, introverted, highly antagonistic and neurotic",1,1,0,1,0,0,1,0,0,2,4,0,0,3,3,0
+"closed to experience, unconscientious, introverted, slightly antagonistic and neurotic",0,1,1,2,1,1,1,1,4,1,3,2,1,3,2,0
+"closed to experience, unconscientious, introverted, antagonistic and highly neurotic",0,1,1,4,0,0,0,1,1,2,3,1,0,3,4,1
+"closed to experience, unconscientious, introverted, antagonistic and slightly neurotic",1,1,1,2,0,0,1,2,1,3,2,3,0,2,2,1
+"highly closed to experience, unconscientious, introverted, antagonistic and emotionally stable",0,0,0,0,1,0,0,1,1,1,1,0,0,1,1,0
+"slightly closed to experience, unconscientious, introverted, antagonistic and emotionally stable",1,0,0,0,1,0,1,2,1,1,3,1,1,1,0,0
+"closed to experience, highly unconscientious, introverted, antagonistic and emotionally stable",0,0,1,0,0,0,0,1,1,0,1,1,0,1,0,0
+"closed to experience, slightly unconscientious, introverted, antagonistic and emotionally stable",0,1,0,3,1,0,0,2,0,1,2,1,1,2,0,0
+"closed to experience, unconscientious, highly introverted, antagonistic and emotionally stable",0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0
+"closed to experience, unconscientious, slightly introverted, antagonistic and emotionally stable",0,0,0,0,1,0,0,1,1,2,2,1,0,1,0,0
+"closed to experience, unconscientious, introverted, highly antagonistic and emotionally stable",0,1,0,3,0,0,0,1,1,0,2,0,0,1,1,0
+"closed to experience, unconscientious, introverted, slightly antagonistic and emotionally stable",1,1,0,2,1,0,0,2,1,1,2,1,1,2,1,0
+"closed to experience, unconscientious, introverted, antagonistic and highly emotionally stable",0,0,0,0,1,0,0,0,1,0,1,1,0,1,1,0
+"closed to experience, unconscientious, introverted, antagonistic and slightly emotionally stable",0,1,1,0,0,0,0,1,1,1,1,1,1,1,0,1
